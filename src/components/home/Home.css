@@ -46,6 +46,10 @@
     position: absolute;
     top: 0.7rem;
     right: 0;
+    /* c3 */
+    animation: showInk 5s;
+    /* Safari 与 Chrome */
+    -webkit-animation: showInk 5s;
 }
 
 .home .content-wrap .enter {
@@ -81,4 +85,50 @@
     font-weight: bold;
     font-family: 'STSong';
     color: #333333;
+}
+
+
+/* Ink 动画效果 */
+
+@keyframes showInk {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        top: 15rem;
+        right: 15.5rem;
+    }
+    100% {
+        opacity: 1;
+        width: 31rem;
+        height: 29.3rem;
+        top: 0.7rem;
+        right: 0;
+    }
+}
+
+
+/* Safari 与 Chrome */
+
+@-webkit-keyframes showInk {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        top: 15rem;
+        right: 15.5rem;
+    }
+    100% {
+        opacity: 1;
+        width: 31rem;
+        height: 29.3rem;
+        top: 0.7rem;
+        right: 0;
+    }
 }

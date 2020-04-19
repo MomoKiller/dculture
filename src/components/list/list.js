@@ -2,11 +2,14 @@ export default {
     name: "List",
     data() {
         return {
-            listObj: []
+            listObj: [],
+            showBtnTop: false
         };
     },
     mounted() {
         this.initData();
+        // 监听滚动
+        window.addEventListener('scroll', this.getScrollPosition, true);
     },
     methods: {
         initData() {
@@ -67,7 +70,21 @@ export default {
         // 点击分享
         share() {
             alert('点击分享');
+        },
+        // 滚动
+        getScrollPosition() {
+            let scrollH = document.querySelector('.list').scrollHeight;
+            let osTop = document.querySelector('.list').scrollTop;
+            let pageH = document.querySelector('.list').offsetHeight || document.querySelector('.list').clientHeight;
+            if ((pageH + osTop) >= (scrollH - 70) && scrollH >= (pageH + 70)) {
+                this.showBtnTop = true
+            } else {
+                this.showBtnTop = false;
+            }
         }
 
+    },
+    destroyed() {
+        window.removeEventListener('scroll', this.getScrollPosition, true);
     }
 };

@@ -50,7 +50,7 @@
         <li class="toRadio" @click="toPage(9)"></li>
       </ul>
     </footer>
-    <a class="btn-top" @click="toTop()"></a>
+    <a class="btn-top" @click="toTop()" v-if="showBtnTop"></a>
   </div>
 </template>
 
