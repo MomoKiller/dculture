@@ -4,5 +4,17 @@ export default {
         return {
             msg: "Welcome to Your Vue.js App"
         };
+    },
+    mounted() {
+
+    },
+    methods: {
+        toMusic() {
+            alert('music');
+        },
+        toEnter() {
+            alert('Enter');
+            this.$router.push({ path: '/List' });
+        }
     }
 };

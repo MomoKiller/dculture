@@ -3,8 +3,8 @@ body {
     margin: 0;
     padding: 0;
     outline: none;
-    height: 100%;
     width: 100%;
+    height: 100%;
     overflow: hidden;
     font-size: 10px;
 }
@@ -13,10 +13,11 @@ body {
     font-family: Helvetica, Tahoma, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", STXihei, "Microsoft YaHei", SimHei, "WenQuanYi Micro Hei";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #333333;
     height: 100%;
     width: 100%;
+    background-color: #ffffff;
+    text-align: center;
+    color: #333333;
 }
 
 p,
@@ -27,4 +28,54 @@ li {
     padding: 0;
     margin: 0;
     text-decoration: none;
+}
+
+
+/* ipad */
+
+@media screen and (max-width: 1024px) and (min-width: 415px) {
+    html,
+    body {
+        font-size: 14px !important;
+    }
+}
+
+
+/* iphone 6+ */
+
+@media screen and (max-width: 414px) and (min-width: 376px) {
+    html,
+    body {
+        font-size: 10px !important;
+    }
+}
+
+
+/* iphoneX 6 */
+
+@media screen and (max-width: 375px) and (min-width: 361px) {
+    html,
+    body {
+        font-size: 10px !important;
+    }
+}
+
+
+/* S5 */
+
+@media screen and (max-width: 360px) and (min-width: 321px) {
+    html,
+    body {
+        font-size: 8px !important;
+    }
+}
+
+
+/* iphone 5 */
+
+@media screen and (max-width: 320px) {
+    html,
+    body {
+        font-size: 8px !important;
+    }
 }

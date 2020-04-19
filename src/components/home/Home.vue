@@ -1,17 +1,18 @@
 <template>
   <div class="home">
+    <a class="music" @click="toMusic()"></a>
     <div class="content-wrap">
-      <a class="music"></a>
       <div class="theme"></div>
       <div class="ink"></div>
-      <a class="enter"></a>
-      <div class="footer">
+      <a class="enter" @click="toEnter()"></a>
+      
+    </div>
+    <div class="footer">
         <p>
           <a>常熟市委宣传部出品</a>
         </p>
         <p>苏州巨数技术支持</p>
       </div>
-    </div>
   </div>
 </template>
 
