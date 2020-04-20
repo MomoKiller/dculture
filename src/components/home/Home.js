@@ -14,7 +14,7 @@ export default {
         },
         toEnter() {
             alert('Enter');
-            this.$router.push({ path: '/List' });
+            this.$router.push({ path: '/list' });
         }
     }
 };

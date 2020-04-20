@@ -151,8 +151,9 @@
 }
 
 .detail footer ul {
-    width: 100%;
+    width: calc(100% - 4rem);
     height: 100%;
+    margin: 0 auto;
 }
 
 .detail footer ul li {

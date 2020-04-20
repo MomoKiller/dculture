@@ -45,6 +45,7 @@ export default {
         // 列表查看详情
         toDetail(item) {
             alert('当前图片ID: ' + item.id);
+            this.$router.push({ path: '/detail' });
         },
         // 回到顶部
         toTop() {
