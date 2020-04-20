@@ -2,6 +2,7 @@
   <div class="list">
     <header>
       <a class="share" @click="share()"></a>
+      <div class="bg-herder"></div>
       <div class="search-wrap">
         <div class="input-wrap">
           <i></i>
