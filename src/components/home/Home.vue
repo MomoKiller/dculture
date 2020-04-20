@@ -3,9 +3,9 @@
     <a class="music" @click="toMusic()"></a>
     <div class="content-wrap">
       <div class="theme"></div>
-      <div class="ink"></div>
-      <a class="enter" @click="toEnter()"></a>
-      
+      <!-- <div class="ink"></div> -->
+      <a class="enter"></a>
+      <a class="label-enter" @click="toEnter()"><i></i></a>
     </div>
     <div class="footer">
         <p>

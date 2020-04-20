@@ -55,11 +55,37 @@
 .home .content-wrap .enter {
     width: 12.3rem;
     height: 11.5rem;
-    background: url(../../assets/img/home/btn-enter.png) no-repeat;
+    background: url(../../assets/img/home/btn-enter1.png) no-repeat;
     background-size: 100% 100%;
     position: absolute;
     top: 31.7rem;
     right: 6.5rem;
+    /* c3 */
+    animation: showEnter 5s;
+    /* Safari 与 Chrome */
+    -webkit-animation: showEnter 5s;
+}
+
+.home .content-wrap .label-enter {
+    display: block;
+    width: 12.3rem;
+    height: 11.5rem;
+    position: absolute;
+    top: 31.7rem;
+    right: 6.5rem;
+}
+
+.home .content-wrap .label-enter i {
+    display: block;
+    width: 5.5rem;
+    height: 4.6rem;
+    background: url(../../assets/img/home/label-enter.png) no-repeat;
+    background-size: 100% 100%;
+    /* position: absolute; */
+    /* top: 35.2rem; */
+    /* right: 9.5rem; */
+    margin-top: 3.5rem;
+    margin-left: 3.5rem;
 }
 
 .home .footer {
@@ -130,5 +156,51 @@
         height: 29.3rem;
         top: 0.7rem;
         right: 0;
+    }
+}
+
+
+/* enter 动画效果 */
+
+@keyframes showEnter {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        top: 37.45rem;
+        right: 12.65rem;
+    }
+    100% {
+        opacity: 1;
+        width: 12.3rem;
+        height: 11.5rem;
+        top: 31.7rem;
+        right: 6.5rem;
+    }
+}
+
+
+/* Safari 与 Chrome */
+
+@-webkit-keyframes showEnter {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        top: 37.45rem;
+        right: 12.65rem;
+    }
+    100% {
+        opacity: 1;
+        width: 12.3rem;
+        height: 11.5rem;
+        top: 31.7rem;
+        right: 6.5rem;
     }
 }
