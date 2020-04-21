@@ -70,7 +70,7 @@
 }
 
 .detail .content-wrap ul li.autho {
-    background: url(/static/img/bg-list.3df6f91.png) no-repeat;
+    background: url(../../assets/img/detail/bg-list.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
