@@ -61,9 +61,9 @@
     top: 31.7rem;
     right: 6.5rem;
     /* c3 */
-    animation: showEnter 5s;
+    animation: showEnter 5s ease-in;
     /* Safari 与 Chrome */
-    -webkit-animation: showEnter 5s;
+    -webkit-animation: showEnter 5s ease-in;
 }
 
 .home .content-wrap .label-enter {
@@ -143,7 +143,7 @@
     0% {
         opacity: 0;
     }
-    20% {
+    10% {
         opacity: 0;
         width: 0;
         height: 0;
@@ -166,7 +166,7 @@
     0% {
         opacity: 0;
     }
-    20% {
+    10% {
         opacity: 0;
         width: 0;
         height: 0;
