@@ -16,7 +16,8 @@
       <ul>
         <li v-for="(item, i) in listObj" :key="i">
           <div class="img-wrap">
-            <img :src="item.imgSrc" alt="">
+            <!-- <img :src="item.imgSrc" alt=""> -->
+            <img v-lazy="item.imgSrc" alt="">
             <a></a>
           </div>
           <div class="detail">
