@@ -32,7 +32,7 @@
         <footer>
             <ul>
                 <li>
-                    <a class="btn-poster"></a>
+                    <a class="btn-poster" @click="toPost()"></a>
                 </li>
                 <li>
                     <a class="btn-share"></a>
@@ -45,6 +45,8 @@
                 </li>
             </ul>
         </footer>
+        <!-- 分享海报 -->
+        <share v-if="showPost"></share>
     </div>
 </template>
 

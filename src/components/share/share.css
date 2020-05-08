@@ -1,0 +1,124 @@
+.share {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* 遮罩层 */
+
+.share .mask {
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.6;
+    filter: Alpha(opacity=60);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.share .content {
+    width: 86.67%;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.share .content .content-wrap {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.share .content .header {
+    width: 100%;
+    height: 0;
+    padding-bottom: 41.3%;
+    background: url(../../assets/img/share/bg-header.png) no-repeat;
+    background-position: center top;
+    background-size: 100%;
+}
+
+.share .content .work-img {
+    width: calc(100% - 2.6rem);
+    /* height: 20rem; */
+    margin: 1rem auto;
+    background: url(../../assets/img/share/bg-list.png) no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+.share .content .work-img img {
+    width: calc(100% - 3rem);
+    margin: 1.5rem 0 1.3rem;
+}
+
+.share .content .autho-wrap {
+    overflow: hidden;
+}
+
+.share .content .autho-wrap .work-name {
+    font-family: 'STSong';
+    font-size: 1.6rem;
+    font-weight: bold;
+    height: 2rem;
+    line-height: 2rem;
+}
+
+.share .content .autho-wrap .autho {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.share .content .autho-wrap .autho a {
+    color: #999999;
+}
+
+.share .content .ercode-wrap {
+    width: calc(100% - 3rem);
+    overflow: hidden;
+    padding: 1rem 0 2rem;
+    margin: 0 auto;
+    border-top: 1px solid #e3e3e3;
+}
+
+.share .content .ercode-wrap .tip {
+    width: 54.13%;
+    height: 0;
+    padding-bottom: 20.13%;
+    background: url(../../assets/img/share/bg-foot.png) no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    overflow: hidden;
+    float: right;
+}
+
+.share .content .ercode-wrap .ercode {
+    width: 19.33%;
+    height: 0;
+    padding-bottom: 19.33%;
+    overflow: hidden;
+    float: right;
+}
+
+.share .content .ercode-wrap .ercode img {
+    /* height: 100%; */
+    width: 100%;
+}
+
+.share .content .label-tip {
+    width: 100%;
+    overflow: hidden;
+}
+
+.share .content .label-tip p {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    color: #ffffff;
+}

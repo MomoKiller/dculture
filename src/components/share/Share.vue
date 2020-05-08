@@ -1,7 +1,30 @@
 <template>
-    <div class="share">
-
+  <div class="share">
+    <div class="mask"></div>
+    <div class="content">
+      <div class="content-wrap">
+        <div class="header"></div>
+        <div class="work-img">
+          <img src="../../assets/img/share/img-default.png" alt="..." />
+        </div>
+        <div class="autho-wrap">
+          <p class="work-name">富春山居图</p>
+          <p class="autho">
+            <a>作者：</a>黄公望
+          </p>
+        </div>
+        <div class="ercode-wrap">
+          <div class="ercode">
+            <img src="../../assets/img/share/img-ercode.png" alt="..." />
+          </div>
+          <div class="tip"></div>
+        </div>
+      </div>
+      <div class="label-tip">
+        <p>长按保存到本地或者转发至好友</p>
+      </div>
     </div>
+  </div>
 </template>
 
 <script>
