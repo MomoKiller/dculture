@@ -1,8 +1,8 @@
 <template>
-  <div class="share">
-    <div class="mask"></div>
+  <div class="share" v-if="shareState">
+    <div class="mask" @click="shareClose()"></div>
     <div class="content">
-      <div class="content-wrap">
+      <div class="content-wrap" @touchstart="gotouchstart" @touchmove="gotouchmove" @touchend="gotouchend" ref="postref"><!-- 长按事件 -->
         <div class="header"></div>
         <div class="work-img">
           <img src="../../assets/img/share/img-default.png" alt="..." />

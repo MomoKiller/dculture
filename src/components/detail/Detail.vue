@@ -46,7 +46,7 @@
             </ul>
         </footer>
         <!-- 分享海报 -->
-        <share v-if="showPost"></share>
+        <share ref="share"></share>
     </div>
 </template>
 

@@ -5,7 +5,6 @@ export default {
     components: { Share },
     data() {
         return {
-            showPost: false
         };
     },
     mounted() {
@@ -14,7 +13,7 @@ export default {
     methods: {
         // 分享海报
         toPost() {
-            this.showPost = true;
+            this.$refs.share.shareOpen();
         }
     }
 };
