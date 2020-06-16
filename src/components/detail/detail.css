@@ -61,12 +61,13 @@
 }
 
 .detail .content-wrap ul li.cover {
-    height: 17.5rem;
+    /* height: 17.5rem; */
 }
 
 .detail .content-wrap ul li.cover img {
-    height: 17.5rem;
-    max-width: 100%;
+    /* height: 17.5rem; */
+    /* max-width: 100%; */
+    width: 100%;
 }
 
 .detail .content-wrap ul li.autho {
