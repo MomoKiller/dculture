@@ -1,7 +1,7 @@
 .home {
     height: 100%;
     width: 100%;
-    background: url(../../assets/img/home/home-bg-home.png) no-repeat;
+    background: url(http://qc2p19zhf.bkt.clouddn.com/home-bg-home.png) no-repeat;
     background-position: center center;
     background-size: 100%;
     position: relative;
@@ -11,7 +11,7 @@
     display: block;
     width: 3.7rem;
     height: 3.5rem;
-    background: url(../../assets/img/home/home-btn-music.png) no-repeat;
+    background: url(http://qc2p19zhf.bkt.clouddn.com/home-btn-music.png) no-repeat;
     background-size: 100% 100%;
     position: fixed;
     top: 1.3rem;
@@ -31,7 +31,7 @@
 .home .content-wrap .theme {
     width: 11rem;
     height: 26.5rem;
-    background: url(../../assets/img/home/home-bg-theme.png) no-repeat;
+    background: url(http://qc2p19zhf.bkt.clouddn.com/home-bg-theme.png) no-repeat;
     background-size: 100% 100%;
     position: absolute;
     top: 2.5rem;
@@ -41,7 +41,7 @@
 .home .content-wrap .ink {
     width: 31rem;
     height: 29.3rem;
-    background: url(../../assets/img/home/home-bg-ink.png) no-repeat;
+    background: url(http://qc2p19zhf.bkt.clouddn.com/home-bg-ink.png) no-repeat;
     background-size: 100% 100%;
     position: absolute;
     top: 0.7rem;
@@ -55,7 +55,7 @@
 .home .content-wrap .enter {
     width: 12.3rem;
     height: 11.5rem;
-    background: url(../../assets/img/home/home-btn-enter1.png) no-repeat;
+    background: url(http://qc2p19zhf.bkt.clouddn.com/home-btn-enter1.png) no-repeat;
     background-size: 100% 100%;
     position: absolute;
     top: 31.7rem;
@@ -79,7 +79,7 @@
     display: block;
     width: 5.5rem;
     height: 4.6rem;
-    background: url(../../assets/img/home/home-label-enter.png) no-repeat;
+    background: url(http://qc2p19zhf.bkt.clouddn.com/home-label-enter.png) no-repeat;
     background-size: 100% 100%;
     /* position: absolute; */
     /* top: 35.2rem; */
