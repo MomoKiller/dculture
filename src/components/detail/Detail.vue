@@ -4,7 +4,7 @@
         <div class="content-wrap">
             <ul>
                 <li class="cover">
-                    <img src="../../assets/img/detail/img-default.png" alt="">
+                    <img src="../../assets/img/detail/detail-img-default.png" alt="">
                 </li>
                 <li class="autho">
                     <p class="name">黄梅戏</p>

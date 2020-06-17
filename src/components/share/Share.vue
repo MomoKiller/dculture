@@ -5,7 +5,7 @@
       <div class="content-wrap" @touchstart="gotouchstart" @touchmove="gotouchmove" @touchend="gotouchend" ref="postref"><!-- 长按事件 -->
         <div class="header"></div>
         <div class="work-img">
-          <img src="../../assets/img/share/img-default.png" alt="..." />
+          <img src="../../assets/img/share/share-img-default.png" alt="..." />
         </div>
         <div class="autho-wrap">
           <p class="work-name">富春山居图</p>
@@ -15,7 +15,7 @@
         </div>
         <div class="ercode-wrap">
           <div class="ercode">
-            <img src="../../assets/img/share/img-ercode.png" alt="..." />
+            <img src="../../assets/img/share/share-img-ercode.png" alt="..." />
           </div>
           <div class="tip"></div>
         </div>

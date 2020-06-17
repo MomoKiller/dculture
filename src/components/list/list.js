@@ -15,27 +15,27 @@ export default {
         initData() {
             this.listObj = [{
                     id: '0',
-                    imgSrc: require('../../assets/img/list/img-default.png'),
+                    imgSrc: require('../../assets/img/list/list-img-default.png'),
                     title: '富春山居图',
                     autho: '黄公望',
                     desc: ' 一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字'
                 }, {
                     id: '1',
-                    imgSrc: require('../../assets/img/list/img-default.png'),
+                    imgSrc: require('../../assets/img/list/list-img-default.png'),
                     title: '富春山居图',
                     autho: '黄公望',
                     desc: ' 一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字'
                 },
                 {
                     id: '2',
-                    imgSrc: require('../../assets/img/list/img-default.png'),
+                    imgSrc: require('../../assets/img/list/list-img-default.png'),
                     title: '富春山居图',
                     autho: '黄公望',
                     desc: ' 一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字'
                 },
                 {
                     id: '3',
-                    imgSrc: require('../../assets/img/list/img-default.png'),
+                    imgSrc: require('../../assets/img/list/list-img-default.png'),
                     title: '富春山居图',
                     autho: '黄公望',
                     desc: ' 一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字'
