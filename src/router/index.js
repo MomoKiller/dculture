@@ -4,6 +4,7 @@ import Home from '@/components/home/Home.vue'
 import List from '@/components/list/List.vue'
 import Detail from '@/components/detail/Detail.vue'
 import Share from '@/components/share/share.vue'
+import Home1 from '@/components/home1/home1.vue'
 
 Vue.use(Router)
 
@@ -12,7 +13,8 @@ export default new Router({
     routes: [{
         path: '/',
         name: 'Home',
-        component: Home
+        // component: Home
+        component: Home1
     }, {
         path: '/home',
         name: 'home',
@@ -29,5 +31,9 @@ export default new Router({
         path: '/share',
         name: 'share',
         component: Share
+    }, {
+        path: '/home1',
+        name: 'home1',
+        component: Home1
     }]
 })
