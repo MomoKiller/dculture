@@ -17,8 +17,8 @@ export default {
             this.works = {
                 name: '富春山居图',
                 author: '黄公望',
-                img: require('http://www.xinzhimin.xyz/share-img-default.png'),
-                ercode: require('http://www.xinzhimin.xyz/share-img-ercode.png')
+                img: 'http://www.xinzhimin.xyz/share-img-default.png',
+                ercode: 'http://www.xinzhimin.xyz/share-img-ercode.png'
             }
         },
         // 生成海报
