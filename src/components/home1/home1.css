@@ -1,10 +1,140 @@
 .home {
     height: 100%;
     width: 100%;
-    background: url(../../assets/img/home/home-bg-home.png) no-repeat;
-    background-position: center center;
-    background-size: 100%;
+    /* background: url(../../assets/img/home/home-bg-home.png) no-repeat; */
+    /* background-position: center center; */
+    /* background-size: 100%; */
     position: relative;
+}
+
+.home a.music {
+    display: block;
+    width: 3.7rem;
+    height: 3.5rem;
+    background: url(../../assets/img/home1/home1-btn-music.png) no-repeat;
+    background-size: 100% 100%;
+    position: fixed;
+    top: 1.3rem;
+    right: 0.9rem;
+    animation: runMusic 10s infinite linear;
+}
+
+.home header {
+    width: 100%;
+    padding-bottom: 60%;
+    background: url(../../assets/img/home1/home1-bg-toof.png) no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+.home .content-wrap {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.home .content-wrap .bg-part-1 {
+    width: 17.35rem;
+    height: 4.45rem;
+    background: url(../../assets/img/home1/home1-bg-toval.png) no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    margin-left: -3rem;
+    animation: showToval 1.5s ease-in;
+}
+
+.home .content-wrap .bg-part-2 {
+    width: 21.4rem;
+    height: 8.45rem;
+    background: url(../../assets/img/home1/home1-img-boat.png) no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    margin: 1rem 2rem;
+    animation: showBoat 1s ease-in;
+}
+
+
+/* .home .content-wrap .moveBoatTmp {
+    animation: moveBoatTmp 18s ease-in;
+} */
+
+.home .content-wrap .moveBoatTmp {
+    animation: moveBoatTmp 18s infinite linear;
+    animation-direction: alternate;
+}
+
+.home .content-wrap .moveBoat {
+    /* c3 */
+    animation: moveBoat 20s infinite linear;
+}
+
+.home .content-wrap .bg-part-3 {
+    width: 100%;
+    padding-bottom: 40%;
+    background: url(../../assets/img/home1/home1-bg-swan.png) no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    animation: showSwan 0.5s ease-in;
+}
+
+.home .flower {
+    width: 19.3rem;
+    height: 29.8rem;
+    background: url(../../assets/img/home1/home1-bg-flower.png) no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 5rem;
+    left: -2.5rem;
+    animation: showFlower 5s infinite;
+    animation-direction: alternate;
+    animation-delay: 0.05s;
+    /* animation-delay: 5s; */
+}
+
+.home .theme {
+    width: 3.2rem;
+    height: 25.75rem;
+    background: url(../../assets/img/home1/home1-label-title.png) no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    position: absolute;
+    right: 5.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    /*c3*/
+    animation: showTheme 3s ease-out;
+    -webkit-animation: showTheme 3s ease-out;
+}
+
+.home .enter-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.home .enter-wrap i {
+    display: block;
+    width: 3.65rem;
+    height: 2.75rem;
+    background: url(../../assets/img/home1/home1-img-flower.png) no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+.home .enter-wrap a.enter {
+    display: block;
+    width: 1.45rem;
+    height: 9.4rem;
+    background: url(../../assets/img/home1/home1-label-enter.png) no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    margin: 1rem auto;
+    animation: showEnter 3s infinite;
+    animation-delay: 5s;
 }
 
 .home .footer {
@@ -30,4 +160,129 @@
     font-weight: bold;
     font-family: 'STSong';
     color: #333333;
+}
+
+
+/* c3 */
+
+@keyframes showTheme {
+    0% {
+        right: 6.5rem;
+        opacity: 0;
+    }
+    10% {
+        right: 6.5rem;
+        opacity: 0;
+    }
+    100% {
+        right: 5.5rem;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes showTheme {
+    0% {
+        right: 6.5rem;
+        opacity: 0;
+    }
+    10% {
+        right: 6.5rem;
+        opacity: 0;
+    }
+    100% {
+        right: 5.5rem;
+        opacity: 1;
+    }
+}
+
+@keyframes showFlower {
+    0% {
+        top: 4.9rem;
+        left: -2.6rem;
+    }
+    25% {
+        top: 5.1rem;
+    }
+    50% {
+        top: 4.9rem;
+    }
+    100% {
+        top: 5.1rem;
+        left: -2.4rem;
+    }
+}
+
+@keyframes showBoat {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes moveBoatTmp {
+    /* 0% {
+        margin-left: 2rem;
+    }
+    100% {
+        margin-left: 100%;
+    } */
+    0% {
+        margin-left: 2rem;
+    }
+    100% {
+        margin-left: 12rem;
+    }
+}
+
+@keyframes moveBoat {
+    0% {
+        margin-left: -20rem;
+    }
+    100% {
+        margin-left: 100%;
+    }
+}
+
+@keyframes showSwan {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes showToval {
+    0% {
+        opacity: 0;
+    }
+    66% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes runMusic {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes showEnter {
+    from {
+        opacity: 0.3;
+    }
+    to {
+        opacity: 1;
+    }
 }
