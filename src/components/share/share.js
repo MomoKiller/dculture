@@ -6,18 +6,21 @@ export default {
         return {
             shareState: false,
             timeOutEvent: 0, // 定时器
-            works: {
+            works: {}
+        };
+    },
+    mounted() {
+        this.initData();
+    },
+    methods: {
+        initData() {
+            this.works = {
                 name: '富春山居图',
                 author: '黄公望',
                 img: require('../../assets/img/share/share-img-default.png'),
                 ercode: require('../../assets/img/share/share-img-ercode.png')
             }
-        };
-    },
-    mounted() {
-
-    },
-    methods: {
+        },
         // 生成海报
         toPost() {
             let self = this;
