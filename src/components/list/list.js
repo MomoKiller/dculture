@@ -1,3 +1,5 @@
+import common from '../../assets/js/common';
+
 export default {
     name: "List",
     data() {
@@ -7,9 +9,12 @@ export default {
         };
     },
     mounted() {
-        this.initData();
+        // this.initData();
         // 监听滚动
         window.addEventListener('scroll', this.getScrollPosition, true);
+
+        // 使用 mokedata
+        this.getListData();
     },
     methods: {
         initData() {
@@ -41,6 +46,14 @@ export default {
                     desc: ' 一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字'
                 }
             ];
+        },
+        // 调接口查询数据
+        getListData() {
+            let listUrl = 'http://www.xinzhimin.xyz/list.json';
+            this.com.getData(this, listUrl, {}, (res) => {
+                console.log('接口返回的数据', res);
+                this.listObj = res;
+            })
         },
         // 列表查看详情
         toDetail(item) {

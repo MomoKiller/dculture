@@ -5,17 +5,17 @@
       <div class="content-wrap" @touchstart="gotouchstart" @touchmove="gotouchmove" @touchend="gotouchend" ref="postref"><!-- 长按事件 -->
         <div class="header"></div>
         <div class="work-img">
-          <img src="http://www.xinzhimin.xyz/share-img-default.png" alt="..." />
+          <img v-lazy="works.img" alt="..." />
         </div>
         <div class="autho-wrap">
-          <p class="work-name">富春山居图</p>
+          <p class="work-name">{{works.name}}</p>
           <p class="autho">
-            <a>作者：</a>黄公望
+            <a>作者：</a>{{works.author}}
           </p>
         </div>
         <div class="ercode-wrap">
           <div class="ercode">
-            <img src="http://www.xinzhimin.xyz/share-img-ercode.png" alt="..." />
+            <img v-lazy="works.ercode" alt="..." />
           </div>
           <div class="tip"></div>
         </div>

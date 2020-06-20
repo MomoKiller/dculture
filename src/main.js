@@ -12,6 +12,8 @@ Vue.prototype.com = com;
 
 Vue.config.productionTip = false
 Vue.use(VueResource)
+
+/* 图片懒加载 */
 Vue.use(VueLazyload, {
     preLoad: 1.3,
     error: './assets/img/error.png',
