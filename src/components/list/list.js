@@ -15,27 +15,27 @@ export default {
         initData() {
             this.listObj = [{
                     id: '0',
-                    imgSrc: 'http://qc2p19zhf.bkt.clouddn.com/list-img-default.png',
+                    imgSrc: 'http://www.xinzhimin.xyz/list-img-default.png',
                     title: '富春山居图',
                     autho: '黄公望',
                     desc: ' 一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字'
                 }, {
                     id: '1',
-                    imgSrc: 'http://qc2p19zhf.bkt.clouddn.com/list-img-default.png',
+                    imgSrc: 'http://www.xinzhimin.xyz/list-img-default.png',
                     title: '富春山居图',
                     autho: '黄公望',
                     desc: ' 一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字'
                 },
                 {
                     id: '2',
-                    imgSrc: 'http://qc2p19zhf.bkt.clouddn.com/list-img-default.png',
+                    imgSrc: 'http://www.xinzhimin.xyz/list-img-default.png',
                     title: '富春山居图',
                     autho: '黄公望',
                     desc: ' 一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字'
                 },
                 {
                     id: '3',
-                    imgSrc: 'http://qc2p19zhf.bkt.clouddn.com/list-img-default.png',
+                    imgSrc: 'http://www.xinzhimin.xyz/list-img-default.png',
                     title: '富春山居图',
                     autho: '黄公望',
                     desc: ' 一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字一段文字'

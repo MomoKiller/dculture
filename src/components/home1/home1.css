@@ -11,7 +11,7 @@
     display: block;
     width: 3.7rem;
     height: 3.5rem;
-    background: url(../../assets/img/home1/home1-btn-music.png) no-repeat;
+    background: url(http://www.xinzhimin.xyz/home1-btn-music.png) no-repeat;
     background-size: 100% 100%;
     position: fixed;
     top: 1.3rem;
@@ -25,7 +25,7 @@
 .home header {
     width: 100%;
     padding-bottom: 60%;
-    background: url(../../assets/img/home1/home1-bg-toof.png) no-repeat;
+    background: url(http://www.xinzhimin.xyz/home1-bg-toof.png) no-repeat;
     background-position: center center;
     background-size: 100% 100%;
 }
@@ -41,7 +41,7 @@
 .home .content-wrap .bg-part-1 {
     width: 17.35rem;
     height: 4.45rem;
-    background: url(../../assets/img/home1/home1-bg-toval.png) no-repeat;
+    background: url(http://www.xinzhimin.xyz/home1-bg-toval.png) no-repeat;
     background-position: center center;
     background-size: 100% 100%;
     margin-left: -3rem;
@@ -51,7 +51,7 @@
 .home .content-wrap .bg-part-2 {
     width: 21.4rem;
     height: 8.45rem;
-    background: url(../../assets/img/home1/home1-img-boat.png) no-repeat;
+    background: url(http://www.xinzhimin.xyz/home1-img-boat.png) no-repeat;
     background-position: center center;
     background-size: 100% 100%;
     margin: 1rem 2rem;
@@ -76,7 +76,7 @@
 .home .content-wrap .bg-part-3 {
     width: 100%;
     padding-bottom: 40%;
-    background: url(../../assets/img/home1/home1-bg-swan.png) no-repeat;
+    background: url(http://www.xinzhimin.xyz/home1-bg-swan.png) no-repeat;
     background-position: center center;
     background-size: 100% 100%;
     animation: showSwan 0.5s ease-in;
@@ -85,7 +85,7 @@
 .home .flower {
     width: 19.3rem;
     height: 29.8rem;
-    background: url(../../assets/img/home1/home1-bg-flower.png) no-repeat;
+    background: url(http://www.xinzhimin.xyz/home1-bg-flower.png) no-repeat;
     background-position: center center;
     background-size: 100% 100%;
     position: absolute;
@@ -100,7 +100,7 @@
 .home .theme {
     width: 3.2rem;
     height: 25.75rem;
-    background: url(../../assets/img/home1/home1-label-title.png) no-repeat;
+    background: url(http://www.xinzhimin.xyz/home1-label-title.png) no-repeat;
     background-position: center center;
     background-size: 100% 100%;
     position: absolute;
@@ -123,7 +123,7 @@
     display: block;
     width: 3.65rem;
     height: 2.75rem;
-    background: url(../../assets/img/home1/home1-img-flower.png) no-repeat;
+    background: url(http://www.xinzhimin.xyz/home1-img-flower.png) no-repeat;
     background-position: center center;
     background-size: 100% 100%;
 }
@@ -132,7 +132,7 @@
     display: block;
     width: 1.45rem;
     height: 9.4rem;
-    background: url(../../assets/img/home1/home1-label-enter.png) no-repeat;
+    background: url(http://www.xinzhimin.xyz/home1-label-enter.png) no-repeat;
     background-position: center center;
     background-size: 100% 100%;
     margin: 1rem auto;

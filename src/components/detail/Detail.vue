@@ -4,7 +4,7 @@
         <div class="content-wrap">
             <ul>
                 <li class="cover">
-                    <img src="http://qc2p19zhf.bkt.clouddn.com/detail-img-default.png" alt="">
+                    <img src="http://www.xinzhimin.xyz/detail-img-default.png" alt="">
                 </li>
                 <li class="autho">
                     <p class="name">黄梅戏</p>

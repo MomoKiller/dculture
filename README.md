@@ -22,4 +22,4 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 
 # 图片域名 + 图片名称
-http://qc2p19zhf.bkt.clouddn.com/detail-bg-header.png
+http://www.xinzhimin.xyz/detail-bg-header.png
