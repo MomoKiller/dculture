@@ -16,6 +16,9 @@
     position: fixed;
     top: 1.3rem;
     right: 0.9rem;
+}
+
+.home a.music.runMusic {
     animation: runMusic 10s infinite linear;
 }
 

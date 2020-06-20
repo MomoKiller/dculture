@@ -3,7 +3,8 @@ export default {
     data() {
         return {
             moveBoat: false,
-            moveBoatTmp: false
+            moveBoatTmp: false,
+            runMusic: false
         };
     },
     mounted() {
@@ -22,7 +23,7 @@ export default {
             // }, 23000);
         },
         toMusic() {
-            alert('music');
+            this.runMusic = !this.runMusic;
         },
         toEnter() {
             alert('Enter');
