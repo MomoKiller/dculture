@@ -151,10 +151,20 @@
     position: relative;
 }
 
-.list .content-wrap ul li .img-wrap img {
+
+/* .list .content-wrap ul li .img-wrap img {
     width: 15.3rem;
     height: 15.3rem;
     margin: 0.4rem;
+} */
+
+.list .content-wrap ul li .img-wrap img {
+    max-width: 15.3rem;
+    max-height: 15.3rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .list .content-wrap ul li .img-wrap a {
