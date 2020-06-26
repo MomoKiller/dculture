@@ -27,7 +27,7 @@ export default {
         },
         toEnter() {
             alert('Enter');
-            this.$router.push({ path: '/list' });
+            this.$router.push({ path: '/bookList' });
         }
     }
 };

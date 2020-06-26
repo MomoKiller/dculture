@@ -122,6 +122,7 @@
 .list .content-wrap {
     /* height: calc(100% - 39rem); */
     /* 这个属性能控制是否列表内滚动 */
+    min-height: calc(100% - 37.5rem);
     overflow: hidden;
 }
 

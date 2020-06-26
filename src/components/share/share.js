@@ -2,25 +2,16 @@ import html2canvas from 'html2canvas';
 
 export default {
     name: "Share",
+    props: ['postData'],
     data() {
         return {
             shareState: false,
             timeOutEvent: 0, // 定时器
-            works: {}
+            ercode: 'http://www.xinzhimin.xyz/default.png'
         };
     },
-    mounted() {
-        this.initData();
-    },
+    mounted() {},
     methods: {
-        initData() {
-            this.works = {
-                name: '富春山居图',
-                author: '黄公望',
-                img: require('../../assets/img/share/share-img-default.png'),
-                ercode: require('../../assets/img/share/share-img-ercode.png')
-            }
-        },
         // 生成海报
         toPost() {
             let self = this;

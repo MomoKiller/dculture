@@ -6,7 +6,7 @@
       <div class="search-wrap">
         <div class="input-wrap">
           <i></i>
-          <input type="text" placeholder="请输入作品名称或作者搜索"/>
+          <input type="text" placeholder="请输入作品名称或作者搜索" v-model="seachParams.keyword"/>
           <a class="btn-search" @click="searchList()"></a>
         </div>
         <p>*作品以首字母排列，排名不分先后</p>
@@ -17,13 +17,13 @@
         <li v-for="(item, i) in listObj" :key="i">
           <div class="img-wrap">
             <!-- <img :src="item.imgSrc" alt=""> -->
-            <img v-lazy="item.imgSrc" alt="">
+            <img v-lazy="item.videopic" alt="">
             <a></a>
           </div>
           <div class="detail">
-            <p class="title">{{item.title}}</p>
-            <p class="autho">作者：<a>{{item.autho}}</a></p>
-            <p class="desc">{{item.desc}}</p>
+            <p class="title">{{item.videoname}}</p>
+            <p class="autho">作者：<a>{{item.videoauthornames}}</a></p>
+            <p class="desc">{{item.videodec}}</p>
             <div class="btn-wrap">
               <a @click="toDetail(item)"></a>
             </div>
@@ -31,7 +31,7 @@
         </li>
       </ul>
     </div>
-    <footer>
+    <!-- <footer>
       <div class="footer">
         <p>
           <a>常熟市委宣传部出品</a>
@@ -51,7 +51,8 @@
         <li class="toRecord" @click="toPage(8)"></li>
         <li class="toRadio" @click="toPage(9)"></li>
       </ul>
-    </footer>
+    </footer> -->
+    <detail-foot></detail-foot>
     <a class="btn-top" @click="toTop()" v-if="showBtnTop"></a>
   </div>
 </template>

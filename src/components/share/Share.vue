@@ -5,17 +5,17 @@
       <div class="content-wrap" @touchstart="gotouchstart" @touchmove="gotouchmove" @touchend="gotouchend" ref="postref"><!-- 长按事件 -->
         <div class="header"></div>
         <div class="work-img">
-          <img v-lazy="works.img" alt="..." />
+          <img v-lazy="postData.videopic" alt="..." />
         </div>
         <div class="autho-wrap">
-          <p class="work-name">{{works.name}}</p>
+          <p class="work-name">{{postData.videoname}}</p>
           <p class="autho">
-            <a>作者：</a>{{works.author}}
+            <a>作者：</a>{{postData.videoauthornames}}
           </p>
         </div>
         <div class="ercode-wrap">
           <div class="ercode">
-            <img v-lazy="works.ercode" alt="..." />
+            <img v-lazy="ercode" alt="..." />
           </div>
           <div class="tip"></div>
         </div>

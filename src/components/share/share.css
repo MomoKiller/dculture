@@ -72,8 +72,10 @@
 }
 
 .share .content .autho-wrap .autho {
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
+    /* margin-top: 0.5rem; */
+    /* margin-bottom: 1rem; */
+    width: 50%;
+    margin: 0.5rem auto 1rem;
 }
 
 .share .content .autho-wrap .autho a {
