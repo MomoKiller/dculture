@@ -12,7 +12,8 @@
                     <p class="name">
                         <a v-for="(item, i) in works.videoList" :key="i" :class="{active: i == videoIndex}" @click="switchPlayer(i)">{{item.videoname}}</a>
                     </p>
-                    <a class="autho"><span>作者：</span>{{works.videoauthornames}}</a>
+                    <!-- <a class="autho"><span>作者：</span>{{works.videoauthornames}}</a> -->
+                    <a class="autho">{{works.videoauthornames}}</a>
                 </li>
 
                 <!--

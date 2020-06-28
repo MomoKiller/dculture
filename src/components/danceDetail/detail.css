@@ -10,6 +10,7 @@
 .detail header {
     width: 100%;
     padding-bottom: 56%;
+    /* background: url(../../assets/img/detail/detail-bg-header.png) no-repeat; */
     background: url(../../assets/img/detail/detail-bg-header.png) no-repeat;
     background-position: center top;
     background-size: 100%;
