@@ -41,7 +41,7 @@
                     <p class="title">欢迎进入戏曲作品展区</p>
                     <p class="likes">已有<a>{{works.likecount || 0}}</a>人为此作品点赞</p>
                     <a class="btn-like" @click="lickCount('add')" v-if="!isLikeClick"></a>
-                    <a class="btn-cancle" @click="lickCount('cut')" v-if="isLikeClick">取消点赞</a>
+                    <a class="btn-cancle" @click="lickCount('cut')" v-if="isLikeClick"></a>
                 </div>
             </div>
         </div>
