@@ -126,3 +126,10 @@ selector {
 img {
     pointer-events: none;
 }
+
+
+/* 组件按钮样式 */
+
+.qplayer-controlswrapper {
+    z-index: 3 !important;
+}

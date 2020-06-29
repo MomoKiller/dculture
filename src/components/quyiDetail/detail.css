@@ -98,6 +98,7 @@
 
 .detail .content-wrap ul li.cover .player {
     height: 20.5rem;
+    width: 100%;
 }
 
 .detail .content-wrap ul li.autho {
