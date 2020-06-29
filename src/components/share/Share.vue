@@ -2,8 +2,8 @@
   <div class="share" v-if="shareState">
     <div class="mask" @click="shareClose()"></div>
     <div class="content">
-      <div class="content-wrap" @touchstart="gotouchstart" @touchmove="gotouchmove" @touchend="gotouchend" ref="postref"><!-- 长按事件 -->
-        <div class="header"></div>
+      <div class="content-wrap" @touchstart="gotouchstart($event)" @touchmove="gotouchmove($event)" @touchend="gotouchend($event)" ref="postref"><!-- 长按事件 -->
+        <div class="header" :class="postData.header"></div>
         <div class="work-img">
           <img v-lazy="postData.videopic" alt="..." />
         </div>
@@ -16,7 +16,8 @@
         </div>
         <div class="ercode-wrap">
           <div class="ercode">
-            <img v-lazy="ercode" alt="..." />
+            <!-- <img v-lazy="ercode" alt="..." /> -->
+            <canvas ref="ercode"></canvas>
           </div>
           <div class="tip"></div>
         </div>

@@ -3,6 +3,7 @@
     height: 100%;
     overflow-y: auto;
     /* 这个属性能控制是否列表内滚动 */
+    -webkit-overflow-scrolling: touch;
 }
 
 .list a.btn-top {
@@ -130,8 +131,8 @@
 .list .content-wrap ul {
     height: 100%;
     width: 100%;
-    overflow-x: hidden;
-    overflow-y: auto;
+    /* overflow-x: hidden; */
+    /* overflow-y: auto; */
 }
 
 .list .content-wrap ul li {

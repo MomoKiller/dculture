@@ -55,6 +55,7 @@ export default {
                     self.showPlayer();
                     // 分享海报数据
                     self.postData = self.works;
+                    self.postData.header = 'quyi';
                 }
             })
 

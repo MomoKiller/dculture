@@ -86,3 +86,43 @@ li {
         font-size: 8px !important;
     }
 }
+
+
+/* iphonex 兼容 */
+
+
+/* 当需要在中文版chrome浏览器中显示小于12px的字体时，而且此时页面放大效果会被阻止*/
+
+html,
+body {
+    -webkit-text-size-adjust: none;
+}
+
+
+/*去掉苹果手机点击瞬间出现的灰色背景*/
+
+html,
+body {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+/*去除苹果手机默认的input样式*/
+
+input {
+    -webkit-appearance: none;
+}
+
+
+/*给IOS系统里cursor不为pointer的元素添加事件时会不同程度受影响，加上cursor: pointer可解决*/
+
+selector {
+    cursor: pointer
+}
+
+
+/* 阻止图片在微信里被点击放大*/
+
+img {
+    pointer-events: none;
+}

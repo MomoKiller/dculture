@@ -5,6 +5,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 5;
 }
 
 
@@ -40,6 +41,24 @@
     height: 0;
     padding-bottom: 41.3%;
     background: url(../../assets/img/share/share-bg-header.png) no-repeat;
+    background-position: center top;
+    background-size: 100%;
+}
+
+.share .content .header.book {
+    background: url(../../assets/img/list/list-bg-header-book.png) no-repeat;
+    background-position: center top;
+    background-size: 100%;
+}
+
+.share .content .header.dance {
+    background: url(../../assets/img/list/list-bg-header-dance.png) no-repeat;
+    background-position: center top;
+    background-size: 100%;
+}
+
+.share .content .header.quyi {
+    background: url(../../assets/img/list/list-bg-header-quyi.png) no-repeat;
     background-position: center top;
     background-size: 100%;
 }
@@ -99,12 +118,13 @@
     background-size: 100% 100%;
     overflow: hidden;
     float: right;
+    margin-right: 1rem;
 }
 
 .share .content .ercode-wrap .ercode {
-    width: 19.33%;
+    width: 20.13%;
     height: 0;
-    padding-bottom: 19.33%;
+    padding-bottom: 20.13%;
     overflow: hidden;
     float: right;
 }
@@ -112,6 +132,13 @@
 .share .content .ercode-wrap .ercode img {
     /* height: 100%; */
     width: 100%;
+}
+
+.share .content .ercode-wrap .ercode canvas {
+    width: 100% !important;
+    height: auto !important;
+    /* width: 80%!important; */
+    /* height: auto!important; */
 }
 
 .share .content .label-tip {

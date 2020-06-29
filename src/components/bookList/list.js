@@ -13,7 +13,8 @@ export default {
                 pageSize: 5,
                 keyword: ''
             },
-            totleNum: 0
+            totleNum: 0,
+            scrollTime: null // 节流
         };
     },
     mounted() {
@@ -76,21 +77,23 @@ export default {
         },
         // 滚动
         getScrollPosition() {
+            let self = this;
             let scrollH = document.querySelector('.list').scrollHeight;
             let osTop = document.querySelector('.list').scrollTop;
             let pageH = document.querySelector('.list').offsetHeight || document.querySelector('.list').clientHeight;
             // 是否出现返回顶部按钮
             if ((pageH + osTop) >= (scrollH - 70) && scrollH >= (pageH + 70)) {
+                // alert((pageH + osTop) + '++' + scrollH)
                 this.showBtnTop = true
             } else {
                 this.showBtnTop = false;
             }
             // 是否加载下一页
-            if ((pageH + osTop) == scrollH) {
-                if (this.seachParams.currentPage > this.totleNum) {
+            if ((pageH + osTop) >= (scrollH - 10)) {
+                if (self.seachParams.currentPage > self.totleNum) {
                     return;
                 } else {
-                    this.getListData();
+                    self.getListData();
                 }
             }
 
