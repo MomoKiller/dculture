@@ -7,13 +7,37 @@
 
 /* header */
 
-.detail header {
+
+/* .detail header {
     width: 100%;
     padding-bottom: 56%;
     background: url(../../assets/img/detail/detail-bg-header.png) no-repeat;
     background-position: center top;
     background-size: 100%;
     overflow: hidden;
+} */
+
+.detail header {
+    width: 100%;
+    overflow: hidden;
+}
+
+.detail header .bg-header {
+    width: 100%;
+    height: 0;
+    padding-bottom: 40%;
+    background: url(../../assets/img/list/list-bg-header-book.png) no-repeat;
+    background-position: center top;
+    background-size: 100%;
+}
+
+.detail header .bg-over {
+    width: 100%;
+    height: 0;
+    padding-bottom: 16.5%;
+    background: url(../../assets/img/detail/detail-bg-over.png) no-repeat;
+    background-position: center top;
+    background-size: 100%;
 }
 
 
@@ -168,7 +192,7 @@
     width: 10.3rem;
     height: 3rem;
     line-height: 3rem;
-    background-color: #ad8a5f;
+    background: url(../../assets/img/detail/detail-btn-likes-cancle.png) no-repeat;
     background-size: 100%;
     background-position: center;
     margin: 1rem auto;

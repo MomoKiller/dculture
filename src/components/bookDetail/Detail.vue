@@ -1,9 +1,11 @@
 <template>
     <div class="detail">
-        <header></header>
+        <header>
+            <div class="bg-header"></div>
+            <div class="bg-over"></div>
+        </header>
         <div class="content-wrap">
             <ul>
-
                 <li class="cover">
                     <!-- <img v-lazy="works.videopic" alt="..."> -->
                     <div class="player" id="player"></div>

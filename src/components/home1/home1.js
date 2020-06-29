@@ -26,7 +26,6 @@ export default {
             this.runMusic = !this.runMusic;
         },
         toEnter() {
-            alert('Enter');
             this.$router.push({ path: '/bookList' });
         }
     }

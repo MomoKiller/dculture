@@ -23,7 +23,7 @@
           <div class="detail">
             <p class="title">{{item.videoname}}</p>
             <!-- <p class="autho">作者：<a>{{item.videoauthornames}}</a></p> -->  
-            <p class="autho"><a>{{item.videoauthornames}}</a></p>
+            <p class="autho"><a>{{item.memo3}}</a></p>
             <p class="desc">{{item.videodec}}</p>
             <div class="btn-wrap">
               <a @click="toDetail(item)"></a>

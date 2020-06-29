@@ -10,7 +10,8 @@
         <div class="autho-wrap">
           <p class="work-name">{{postData.videoname}}</p>
           <p class="autho">
-            <a>作者：</a>{{postData.videoauthornames}}
+            <!-- <a>作者：</a>{{postData.videoauthornames}} -->
+            <a></a>{{postData.videoauthornames}}
           </p>
         </div>
         <div class="ercode-wrap">

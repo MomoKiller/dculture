@@ -1,9 +1,11 @@
 <template>
     <div class="detail">
-        <header></header>
+        <header>
+            <div class="bg-header"></div>
+            <div class="bg-over"></div>
+        </header>
         <div class="content-wrap">
             <ul>
-
                 <li class="cover">
                     <!-- <img v-lazy="works.videopic" alt="..."> -->
                     <div class="player" id="player"></div>
@@ -12,7 +14,8 @@
                     <p class="name">
                         <a v-for="(item, i) in works.videoList" :key="i" :class="{active: i == videoIndex}" @click="switchPlayer(i)">{{item.videoname}}</a>
                     </p>
-                    <a class="autho"><span>作者：</span>{{works.videoauthornames}}</a>
+                    <!-- <a class="autho"><span>作者：</span>{{works.videoauthornames}}</a> -->
+                    <a class="autho"><span></span>{{works.videoauthornames}}</a>
                 </li>
 
                 <!--
@@ -59,7 +62,7 @@
             </ul>
         </footer>
         <!-- 分享海报 -->
-        <share ref="share"></share>
+        <share ref="share" :postData="postData"></share>
     </div>
 </template>
 

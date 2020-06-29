@@ -190,11 +190,22 @@
     font-weight: bold;
     color: #333333;
     margin-top: 1.5rem;
+    /*...*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
 
 .list .content-wrap ul li .detail p.autho {
     height: 2.5rem;
     line-height: 2.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
 }
 
 .list .content-wrap ul li .detail p.desc {
