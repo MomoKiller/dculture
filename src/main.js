@@ -18,8 +18,8 @@ Vue.use(QRCode)
 /* 图片懒加载 */
 Vue.use(VueLazyload, {
     preLoad: 1.3,
-    error: './assets/img/error.png',
-    loading: './assets/img/loading.png',
+    error: 'http://www.xinzhimin.xyz/error.png',
+    loading: 'http://www.xinzhimin.xyz/loading.png',
     attempt: 1
 })
 

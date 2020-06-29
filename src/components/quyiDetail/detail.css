@@ -2,7 +2,7 @@
     width: 100%;
     height: 100%;
     overflow-y: auto;
-    . -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;
 }
 
 
@@ -12,7 +12,7 @@
 /* .detail header {
     width: 100%;
     padding-bottom: 56%;
-    background: url(../../assets/img/detail/detail-bg-header.png) no-repeat;
+    background: url(http://www.xinzhimin.xyz/detail-bg-header.png) no-repeat;
     background-position: center top;
     background-size: 100%;
     overflow: hidden;
@@ -27,7 +27,7 @@
     width: 100%;
     height: 0;
     padding-bottom: 40%;
-    background: url(../../assets/img/list/list-bg-header-quyi.png) no-repeat;
+    background: url(http://www.xinzhimin.xyz/list-bg-header-quyi.png) no-repeat;
     background-position: center top;
     background-size: 100%;
 }
@@ -36,7 +36,7 @@
     width: 100%;
     height: 0;
     padding-bottom: 16.5%;
-    background: url(../../assets/img/detail/detail-bg-over.png) no-repeat;
+    background: url(http://www.xinzhimin.xyz/detail-bg-over.png) no-repeat;
     background-position: center top;
     background-size: 100%;
 }
@@ -59,13 +59,13 @@
     margin-left: 1rem;
     margin-bottom: 1rem;
     border: 1.5rem solid transparent;
-    border-image: url(../../assets/img/detail/detail-bg-img-list.png) 30 30 stretch;
+    border-image: url(http://www.xinzhimin.xyz/detail-bg-img-list.png) 30 30 stretch;
     /* Old Firefox */
-    -moz-border-image: url(../../assets/img/detail/detail-bg-img-list.png) 30 30 stretch;
+    -moz-border-image: url(http://www.xinzhimin.xyz/detail-bg-img-list.png) 30 30 stretch;
     /* Safari and Chrome */
-    -webkit-border-image: url(../../assets/img/detail/detail-bg-img-list.png) 30 30 stretch;
+    -webkit-border-image: url(http://www.xinzhimin.xyz/detail-bg-img-list.png) 30 30 stretch;
     /* Opera */
-    -o-border-image: url(../../assets/img/detail/detail-bg-img-list.png) 30 30 stretch;
+    -o-border-image: url(http://www.xinzhimin.xyz/detail-bg-img-list.png) 30 30 stretch;
 }
 
 .detail .content-wrap ul li p.name {
@@ -101,7 +101,7 @@
 }
 
 .detail .content-wrap ul li.autho {
-    background: url(../../assets/img/detail/detail-bg-list.png) no-repeat;
+    background: url(http://www.xinzhimin.xyz/detail-bg-list.png) no-repeat;
     background-size: contain;
     background-position: center;
 }
@@ -140,17 +140,17 @@
     margin-left: 1rem;
     margin-bottom: 1rem;
     border: 1.5rem solid transparent;
-    border-image: url(../../assets/img/detail/detail-bg-img-list2.png) 30 30 stretch;
+    border-image: url(http://www.xinzhimin.xyz/detail-bg-img-list2.png) 30 30 stretch;
     /* Old Firefox */
-    -moz-border-image: url(../../assets/img/detail/detail-bg-img-list2.png) 30 30 stretch;
+    -moz-border-image: url(http://www.xinzhimin.xyz/detail-bg-img-list2.png) 30 30 stretch;
     /* Safari and Chrome */
-    -webkit-border-image: url(../../assets/img/detail/detail-bg-img-list2.png) 30 30 stretch;
+    -webkit-border-image: url(http://www.xinzhimin.xyz/detail-bg-img-list2.png) 30 30 stretch;
     /* Opera */
-    -o-border-image: url(../../assets/img/detail/detail-bg-img-list2.png) 30 30 stretch;
+    -o-border-image: url(http://www.xinzhimin.xyz/detail-bg-img-list2.png) 30 30 stretch;
 }
 
 .detail .content-wrap .welcome .wrap {
-    background: url(../../assets/img/detail/detail-bg-list2.png) no-repeat;
+    background: url(http://www.xinzhimin.xyz/detail-bg-list2.png) no-repeat;
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -182,7 +182,7 @@
     display: block;
     width: 10.3rem;
     height: 3rem;
-    background: url(../../assets/img/detail/detail-btn-likes.png) no-repeat;
+    background: url(http://www.xinzhimin.xyz/detail-btn-likes.png) no-repeat;
     background-size: 100%;
     background-position: center;
     margin: 1rem auto;
@@ -193,7 +193,7 @@
     width: 10.3rem;
     height: 3rem;
     line-height: 3rem;
-    background: url(../../assets/img/detail/detail-btn-likes-cancle.png) no-repeat;
+    background: url(http://www.xinzhimin.xyz/detail-btn-likes-cancle.png) no-repeat;
     background-size: 100%;
     background-position: center;
     margin: 1rem auto;
@@ -223,7 +223,7 @@
     display: block;
     width: 13.2rem;
     height: 3.5rem;
-    background: url(../../assets/img/detail/detail-btn-poster.png) no-repeat;
+    background: url(http://www.xinzhimin.xyz/detail-btn-poster.png) no-repeat;
     background-size: 100%;
     background-position: center;
     margin: 1rem auto 0;
@@ -233,7 +233,7 @@
     display: block;
     width: 13.2rem;
     height: 3.5rem;
-    background: url(../../assets/img/detail/detail-btn-share.png) no-repeat;
+    background: url(http://www.xinzhimin.xyz/detail-btn-share.png) no-repeat;
     background-size: 100%;
     background-position: center;
     margin: 1rem auto 0;
@@ -243,7 +243,7 @@
     display: block;
     width: 15.3rem;
     height: 3.1rem;
-    background: url(../../assets/img/detail/detail-btn-back.png) no-repeat;
+    background: url(http://www.xinzhimin.xyz/detail-btn-back.png) no-repeat;
     background-size: 100%;
     background-position: center;
     margin: 1rem auto 0;
@@ -253,7 +253,7 @@
     display: block;
     width: 15.3rem;
     height: 3.1rem;
-    background: url(../../assets/img/detail/detail-btn-continue.png) no-repeat;
+    background: url(http://www.xinzhimin.xyz/detail-btn-continue.png) no-repeat;
     background-size: 100%;
     background-position: center;
     margin: 1rem auto 0;

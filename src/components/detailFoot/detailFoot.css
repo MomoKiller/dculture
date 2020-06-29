@@ -51,25 +51,25 @@ footer ul li {
 }
 
 footer ul li.toBook {
-    background: url(../../assets/img/list/list-btn-book.png) no-repeat;
+    background: url(http://www.xinzhimin.xyz/list-btn-book.png) no-repeat;
     background-position: center;
     background-size: 100%;
 }
 
 footer ul li.toMusic {
-    background: url(../../assets/img/list/list-btn-music.png) no-repeat;
+    background: url(http://www.xinzhimin.xyz/list-btn-music.png) no-repeat;
     background-position: center;
     background-size: 100%;
 }
 
 footer ul li.toDance {
-    background: url(../../assets/img/list/list-btn-dance.png) no-repeat;
+    background: url(http://www.xinzhimin.xyz/list-btn-dance.png) no-repeat;
     background-position: center;
     background-size: 100%;
 }
 
 footer ul li.toPainting {
-    background: url(../../assets/img/list/list-btn-painting.png) no-repeat;
+    background: url(http://www.xinzhimin.xyz/list-btn-painting.png) no-repeat;
     background-position: center;
     background-size: 100%;
 }
@@ -84,7 +84,7 @@ footer ul li.toClass i {
     display: block;
     /* width: 8.6rem; */
     /* height: 6.8rem; */
-    background: url(../../assets/img/list/list-btn-toClass.png) no-repeat;
+    background: url(http://www.xinzhimin.xyz/list-btn-toClass.png) no-repeat;
     background-position: center;
     background-size: 100%;
     position: absolute;
@@ -97,25 +97,25 @@ footer ul li.toClass i {
 }
 
 footer ul li.toOpera {
-    background: url(../../assets/img/list/list-btn-opera.png) no-repeat;
+    background: url(http://www.xinzhimin.xyz/list-btn-opera.png) no-repeat;
     background-position: center;
     background-size: 100%;
 }
 
 footer ul li.toQuyi {
-    background: url(../../assets/img/list/list-btn-quyi.png) no-repeat;
+    background: url(http://www.xinzhimin.xyz/list-btn-quyi.png) no-repeat;
     background-position: center;
     background-size: 100%;
 }
 
 footer ul li.toRecord {
-    background: url(../../assets/img/list/list-btn-record.png) no-repeat;
+    background: url(http://www.xinzhimin.xyz/list-btn-record.png) no-repeat;
     background-position: center;
     background-size: 100%;
 }
 
 footer ul li.toRadio {
-    background: url(../../assets/img/list/list-btn-radio.png) no-repeat;
+    background: url(http://www.xinzhimin.xyz/list-btn-radio.png) no-repeat;
     background-position: center;
     background-size: 100%;
 }
