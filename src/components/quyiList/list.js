@@ -76,6 +76,7 @@ export default {
         },
         // 滚动
         getScrollPosition() {
+            let self = this;
             let scrollH = document.querySelector('.list').scrollHeight;
             let osTop = document.querySelector('.list').scrollTop;
             let pageH = document.querySelector('.list').offsetHeight || document.querySelector('.list').clientHeight;
