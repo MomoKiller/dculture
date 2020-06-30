@@ -7,29 +7,16 @@
         <div class="content-wrap">
             <ul>
                 <li class="cover">
-                    <!-- <img v-lazy="works.videopic" alt="..."> -->
-                    <div class="player" id="player"></div>
+                    <img v-lazy="works.pdfpic" alt="...">
                 </li>
                 <li class="autho">
-                    <p class="name">
-                        <a v-for="(item, i) in works.videoList" :key="i" :class="{active: i == videoIndex}" @click="switchPlayer(i)">{{item.videoname}}</a>
-                    </p>
-                    <!-- <a class="autho"><span>作者：</span>{{works.videoauthornames}}</a> -->
-                    <a class="autho">{{works.videoauthornames}}</a>
+                    <p class="name">{{works.pdfname}}</p>
+                    <!-- <a><span>作者：</span>{{works.videoauthornames}}</a> -->
+                    <a><span></span>{{works.pdftempname}}</a>
                 </li>
-
-                <!--
-                <li class="cover">
-                    <img v-lazy="works.videopic" alt="...">
-                </li>
-                <li class="autho">
-                    <p class="name">{{works.videoname}}</p>
-                    <a><span>作者：</span>{{works.videoauthornames}}</a>
-                </li>
-                -->
                 <li class="info">
                     <p class="name">作品简介</p>
-                    <p class="info">{{works.videodec}}</p>
+                    <p class="info">{{works.pdfdec}}</p>
                 </li>
             </ul>
             <div class="welcome">

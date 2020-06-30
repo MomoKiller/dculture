@@ -17,14 +17,14 @@
         <li v-for="(item, i) in listObj" :key="i">
           <div class="img-wrap">
             <!-- <img :src="item.imgSrc" alt=""> -->
-            <img v-lazy="item.videopic" alt="">
+            <img v-lazy="item.pdfpic" alt="">
             <a></a>
           </div>
           <div class="detail">
-            <p class="title">{{item.videoname}}</p>
+            <p class="title">{{item.pdfname}}</p>
             <!-- <p class="autho">作者：<a>{{item.videoauthornames}}</a></p> -->  
-            <p class="autho"><a>{{item.memo3}}</a></p>
-            <p class="desc">{{item.videodec}}</p>
+            <p class="autho"><a>{{item.pdftempname}}</a></p>
+            <p class="desc">{{item.pdfdec}}</p>
             <div class="btn-wrap">
               <a @click="toDetail(item)"></a>
             </div>
