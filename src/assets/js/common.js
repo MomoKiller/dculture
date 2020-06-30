@@ -196,9 +196,9 @@ export default {
         return flag;
     },
     // 分享事件
-    share: function(that) {
+    share: function(that, nowlocation) {
         var url = "http://xinzhimin.xyz"; //项目域名
-        var nowlocation = "http://xinzhimin.xyz/vue/quyiList"; //当前页面的url
+        // var nowlocation = "http://xinzhimin.xyz/vue/quyiList"; //当前页面的url
         wx.ready(() => { //需在用户可能点击分享按钮前就先调用
             console.log("updateAppMessageShareData & updateTimelineShareData")
                 /* 聊天 */
@@ -228,8 +228,9 @@ export default {
         });
 
         that.com.postData(that, url + "/wx/getSignature", postData, (response) => {
-            var signature = response.data.signature;
-            var timestamp = response.data.timestamp;
+            console.log('response--------', response);
+            var signature = response.signature;
+            var timestamp = response.timestamp;
             console.log(signature)
             console.log(timestamp)
             var appId = "wx1c753decf0a896a9";

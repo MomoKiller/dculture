@@ -18,7 +18,7 @@ export default {
     mounted() {
         this.palyContainer = document.getElementById("player");
         this.initData();
-        this.com.share(this);
+        this.com.share(this, location.href);
     },
     methods: {
         initData() {

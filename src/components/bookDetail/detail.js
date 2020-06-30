@@ -13,7 +13,7 @@ export default {
     },
     mounted() {
         this.initData();
-        this.com.share(this);
+        this.com.share(this, location.href);
     },
     methods: {
         initData() {

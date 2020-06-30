@@ -27,7 +27,7 @@ export default {
         // 使用 mokedata
         this.getListData();
         // 分享
-        this.com.share(this);
+        this.com.share(this, location.href);
     },
     methods: {
         // 调接口查询数据
