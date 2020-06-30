@@ -92,13 +92,13 @@ export default {
                 this.showBtnTop = false;
             }
             // 是否加载下一页
-            if ((pageH + osTop) >= (scrollH - 1)) {
-                if (self.seachParams.currentPage > self.totleNum) {
-                    return;
-                } else {
-                    self.getListData();
-                }
-            }
+            // if ((pageH + osTop) >= (scrollH - 1)) {
+            //     if (self.seachParams.currentPage > self.totleNum) {
+            //         return;
+            //     } else {
+            //         self.getListData();
+            //     }
+            // }
 
         }
 

@@ -1,8 +1,8 @@
 <template>
-  <div class="share" v-if="shareState">
+  <div class="share" v-show="shareState">
     <div class="mask" @click="shareClose()"></div>
-    <div class="content" v-if="!hasImg">
-      <div class="content-wrap" @touchstart="gotouchstart($event)" @touchmove="gotouchmove($event)" @touchend="gotouchend($event)" ref="postref"><!-- 长按事件 -->
+    <div class="content">
+      <div v-if="!hasImg" class="content-wrap" ref="postref" @touchstart="gotouchstart($event)" @touchmove="gotouchmove($event)" @touchend="gotouchend($event)"><!-- 长按事件 -->
         <div class="header" :class="postData.header"></div>
         <div class="work-img">
           <img v-lazy="postData.videopic" alt="..." />
@@ -22,12 +22,12 @@
           <div class="tip"></div>
         </div>
       </div>
+      <img src="" class="content-img" ref="contentImg">
       <div class="label-tip">
         <p>长按保存到本地或者转发至好友</p>
       </div>
     </div>
-
-    <img src="" class="content-img" ref="contentImg">
+    
   </div>
 </template>
 

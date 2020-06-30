@@ -31,6 +31,7 @@
           </div>
         </li>
       </ul>
+      <a class="load-more" @click="getListData()">点击加载更多</a>
     </div>
     <!-- <footer>
       <div class="footer">

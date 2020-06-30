@@ -12,7 +12,10 @@ export default {
             hasImg: false
         };
     },
-    mounted() {},
+    mounted() {
+        this.useqrcode();
+        // this.toPost();
+    },
     methods: {
         // 生成海报
         toPost() {
@@ -21,10 +24,7 @@ export default {
             let DemoH = self.$refs.postref.offsetHeight; //获取目标元素的宽高
             html2canvas(self.$refs.postref, { useCORS: true, width: DomeW, height: DemoH }).then(function(canvas) {
                 let imgUri = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"); // 获取生成的图片的url
-
                 self.downloadIamge(imgUri, self.postData.videoname);
-                // self.savePicture('http://www.xinzhimin.xyz/detail-bg-header.png');
-                // self.downloadIamge('http://www.xinzhimin.xyz/detail-bg-header.png', self.postData.videoname);
             })
         },
         gotouchstart(e) {
@@ -64,15 +64,15 @@ export default {
                 var context = canvas.getContext("2d");
                 context.drawImage(image, 0, 0, image.width, image.height);
                 var url = canvas.toDataURL("image/png"); //得到图片的base64编码数据
-                // var a = document.createElement("a"); // 生成一个a元素
-                // var event = new MouseEvent("click"); // 创建一个单击事件
-                // a.download = name || "photo"; // 设置图片名称
-                // a.href = url; // 将生成的URL设置为a.href属性
-                // a.dispatchEvent(event); // 触发a的单击事件
+                var a = document.createElement("a"); // 生成一个a元素
+                var event = new MouseEvent("click"); // 创建一个单击事件
+                a.download = name || "photo"; // 设置图片名称
+                a.href = url; // 将生成的URL设置为a.href属性
+                a.dispatchEvent(event); // 触发a的单击事件
 
-                self.$refs.contentImg.src = url;
-                self.hasImg = true;
-
+                // self.$refs.contentImg.src = url;
+                // self.hasImg = true;
+                // self.savePicture(url);
             };
             image.src = imgsrc;
 
@@ -81,7 +81,6 @@ export default {
         /* 打开窗口 */
         shareOpen() {
             this.shareState = true;
-            setTimeout(this.useqrcode, 0);
         },
         /* 关闭窗口 */
         shareClose() {
