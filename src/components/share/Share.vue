@@ -1,8 +1,8 @@
 <template>
   <div class="share" v-if="shareState">
     <div class="mask" @click="shareClose()"></div>
-    <div class="content">
-      <div v-show="!hasImg" class="content-wrap" @touchstart="gotouchstart($event)" @touchmove="gotouchmove($event)" @touchend="gotouchend($event)" ref="postref"><!-- 长按事件 -->
+    <div class="content" v-if="!hasImg">
+      <div class="content-wrap" @touchstart="gotouchstart($event)" @touchmove="gotouchmove($event)" @touchend="gotouchend($event)" ref="postref"><!-- 长按事件 -->
         <div class="header" :class="postData.header"></div>
         <div class="work-img">
           <img v-lazy="postData.videopic" alt="..." />

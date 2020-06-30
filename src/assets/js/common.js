@@ -232,7 +232,7 @@ export default {
             "nonceStr": "abc"
         };
 
-        that.com.postData(that, url + "/wx/getSignature", d, (response) => {
+        that.com.getData(that, url + "/wx/getSignature?url=" + nowlocation + "&nonceStr=abc", {}, (response) => {
             console.log('response--------', response);
             var signature = response.signature;
             var timestamp = response.timestamp;
