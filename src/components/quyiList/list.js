@@ -8,7 +8,7 @@ export default {
             listObj: [],
             showBtnTop: false,
             seachParams: {
-                videotype: 2, // 0:舞蹈，1:戏剧，2:曲艺，3:纪录片
+                videotype: 2,
                 currentPage: 1,
                 pageSize: 5,
                 keyword: ''

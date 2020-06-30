@@ -45,7 +45,7 @@ export default {
         },
         // 列表查看详情
         toDetail(item) {
-            this.$router.push({ path: 'bookDetail', query: { videoid: item.videoid } });
+            this.$router.push({ path: 'paintingDetail', query: { videoid: item.videoid } });
         },
         // 回到顶部
         toTop() {
