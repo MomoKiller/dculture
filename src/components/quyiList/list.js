@@ -1,8 +1,9 @@
 import DetailFoot from '@/components/detailFoot/DetailFoot.vue'
+import ShareTip from '@/components/shareTip/ShareTip.vue'
 
 export default {
     name: "quyiList",
-    components: { DetailFoot },
+    components: { DetailFoot, ShareTip },
     data() {
         return {
             listObj: [],
@@ -23,6 +24,8 @@ export default {
 
         // 使用 mokedata
         this.getListData();
+        // 分享
+        this.com.share(this);
     },
     methods: {
         // 调接口查询数据
@@ -73,7 +76,8 @@ export default {
         },
         // 点击分享
         share() {
-            alert('点击分享');
+            // alert('点击分享');
+            this.$refs.tip.openTip();
         },
         // 滚动
         getScrollPosition() {

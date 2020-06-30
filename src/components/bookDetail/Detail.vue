@@ -46,6 +46,8 @@
         </footer>
         <!-- 分享海报 -->
         <share ref="share" :postData="postData"></share>
+        <!-- 分享朋友圈 -->
+        <share-tip ref="tip"></share-tip>
     </div>
 </template>
 

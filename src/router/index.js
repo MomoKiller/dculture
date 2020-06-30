@@ -11,6 +11,8 @@ import DanceDetail from '@/components/danceDetail/Detail.vue'
 import QuyiDetail from '@/components/quyiDetail/Detail.vue'
 import Share from '../components/share/share.vue'
 import Home1 from '@/components/home1/home1.vue'
+import ShareTip from '@/components/shareTip/ShareTip.vue'
+
 
 Vue.use(Router)
 
@@ -64,5 +66,9 @@ export default new Router({
         path: '/paintingDetail',
         name: 'paintingDetail',
         component: PaintingDetail
+    }, {
+        path: '/shareTip',
+        name: 'shareTip',
+        component: ShareTip
     }]
 })

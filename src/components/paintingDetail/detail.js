@@ -1,8 +1,9 @@
 import Share from '@/components/share/share.vue'
+import ShareTip from '@/components/shareTip/ShareTip.vue'
 
 export default {
     name: "PaintingDetail",
-    components: { Share },
+    components: { Share, ShareTip },
     data() {
         return {
             works: {},
@@ -17,6 +18,7 @@ export default {
     mounted() {
         this.palyContainer = document.getElementById("player");
         this.initData();
+        this.com.share(this);
     },
     methods: {
         initData() {
@@ -65,8 +67,8 @@ export default {
             this.$refs.share.shareOpen();
         },
         toShare() {
-            // alert('分享');
-            this.com.share(this);
+            // alert('点击分享');
+            this.$refs.tip.openTip();
         },
         toHomePage() {
             this.$router.push({ path: '/home1' });

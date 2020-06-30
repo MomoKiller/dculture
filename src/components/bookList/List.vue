@@ -55,6 +55,9 @@
     </footer> -->
     <detail-foot></detail-foot>
     <a class="btn-top" @click="toTop()" v-if="showBtnTop"></a>
+
+    <!-- 分享朋友圈 -->
+    <share-tip ref="tip"></share-tip>
   </div>
 </template>
 
