@@ -222,10 +222,15 @@ export default {
             })
         });
 
-        let d = qs.stringify({
+        // let d = qs.stringify({
+        //     "url": nowlocation,
+        //     "nonceStr": "abc",
+        // });
+
+        let d = {
             "url": nowlocation,
-            "nonceStr": "abc",
-        });
+            "nonceStr": "abc"
+        };
 
         that.com.postData(that, url + "/wx/getSignature", d, (response) => {
             console.log('response--------', response);
