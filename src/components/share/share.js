@@ -8,7 +8,8 @@ export default {
         return {
             shareState: false,
             timeOutEvent: 0, // 定时器
-            ercode: ''
+            ercode: '',
+            hasImg: false
         };
     },
     mounted() {},
@@ -70,6 +71,7 @@ export default {
                 // a.dispatchEvent(event); // 触发a的单击事件
 
                 self.$refs.contentImg.src = url;
+                self.hasImg = true;
 
             };
             image.src = imgsrc;
@@ -84,6 +86,7 @@ export default {
         /* 关闭窗口 */
         shareClose() {
             this.shareState = false;
+            this.hasImg = false;
         },
         /* 生成的二维码 */
         useqrcode() {　　　　

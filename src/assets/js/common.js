@@ -222,12 +222,12 @@ export default {
             })
         });
 
-        let postData = qs.stringify({
+        let d = qs.stringify({
             "url": nowlocation,
             "nonceStr": "abc",
         });
 
-        that.com.postData(that, url + "/wx/getSignature", postData, (response) => {
+        that.com.postData(that, url + "/wx/getSignature", d, (response) => {
             console.log('response--------', response);
             var signature = response.signature;
             var timestamp = response.timestamp;
