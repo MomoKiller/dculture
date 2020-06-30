@@ -8,7 +8,7 @@ export default {
             listObj: [],
             showBtnTop: false,
             seachParams: {
-                videotype: 0,
+                // videotype: 0,
                 currentPage: 1,
                 pageSize: 5,
                 keyword: ''
@@ -29,8 +29,8 @@ export default {
     methods: {
         // 调接口查询数据
         getListData() {
-            let params = '?videotype=' + this.seachParams.videotype + '&currentPage=' + this.seachParams.currentPage + '&pageSize=' + this.seachParams.pageSize + '&keyword=' + this.seachParams.keyword;
-            let listUrl = 'http://xinzhimin.xyz/video/selectypByParam' + params;
+            let params = '?currentPage=' + this.seachParams.currentPage + '&pageSize=' + this.seachParams.pageSize + '&keyword=' + this.seachParams.keyword;
+            let listUrl = 'http://xinzhimin.xyz/book/selectByParam' + params;
             this.com.getData(this, listUrl, {}, (res) => {
                 console.log('接口返回的数据', res);
                 if (res && res.list) {

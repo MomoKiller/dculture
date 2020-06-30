@@ -14,9 +14,11 @@
     "less": "^3.11.1",
     "less-loader": "^5.0.0",
     "qrcode": "^1.4.4",
+    "qs": "^6.9.4",
     "vue": "^2.5.2",
     "vue-resource": "^1.5.1",
-    "vue-router": "^3.0.1"
+    "vue-router": "^3.0.1",
+    "weixin-js-sdk": "^1.6.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

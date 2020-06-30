@@ -65,7 +65,8 @@ export default {
             this.$refs.share.shareOpen();
         },
         toShare() {
-            alert('分享');
+            // alert('分享');
+            this.com.toShare(this);
         },
         toHomePage() {
             this.$router.push({ path: '/home1' });

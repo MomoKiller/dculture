@@ -31,6 +31,15 @@
     transform: translate(-50%, -50%);
 }
 
+.share .content-img {
+    width: 86.67%;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .share .content .content-wrap {
     width: 100%;
     background-color: #ffffff;

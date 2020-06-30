@@ -28,17 +28,13 @@
                 </li>
                 -->
                 <li class="info">
-                    <p class="name">作品释义</p>
+                    <p class="name">作品简介</p>
                     <p class="info">{{works.videodec}}</p>
-                </li>
-                <li class="teams">
-                    <p class="name">团队简介</p>
-                    <p class="info">{{works.groupdec}}</p>
                 </li>
             </ul>
             <div class="welcome">
                 <div class="wrap">
-                    <p class="title">欢迎进入戏曲作品展区</p>
+                    <p class="title">欢迎进入图书作品展区</p>
                     <p class="likes">已有<a>{{works.likecount || 0}}</a>人为此作品点赞</p>
                     <a class="btn-like" @click="lickCount('add')" v-if="!isLikeClick"></a>
                     <a class="btn-cancle" @click="lickCount('cut')" v-if="isLikeClick"></a>

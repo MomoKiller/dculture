@@ -21,6 +21,9 @@ function getUrlParam(name) {
     return result ? decodeURIComponent(result[2]) : null;
 }
 
+/* 微信插件 */
+import wx from 'weixin-js-sdk';
+import qs from 'qs';
 
 export default {
     // 获取完整 api 接口
@@ -191,5 +194,53 @@ export default {
     isMobile: function() {
         let flag = navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i);
         return flag;
+    },
+    // 分享事件
+    share: function(that) {
+        var url = "http://xinzhimin.xyz"; //项目域名
+        var nowlocation = "http://xinzhimin.xyz/vue/quyiList"; //当前页面的url
+        wx.ready(() => { //需在用户可能点击分享按钮前就先调用
+            console.log("updateAppMessageShareData & updateTimelineShareData")
+                /* 聊天 */
+            wx.updateAppMessageShareData({
+                title: '常熟市精品文化数字展厅', // 分享标题
+                desc: '我在常熟市精品文化数字展厅参观作品，大家快和我一起来参观吧！', // 分享描述
+                link: nowlocation, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致 
+                imgUrl: url + '/logo.png', // 分享图标
+                success: function() {
+                    console.log("分享成功")
+                }
+            });
+            /* 朋友圈 */
+            wx.updateTimelineShareData({
+                title: '我在常熟市精品文化数字展厅参观作品，大家快和我一起来参观吧！', // 分享标题
+                link: nowlocation, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+                imgUrl: url + '/logo.png', // 分享图标
+                success: function() {
+                    console.log("分享成功")
+                }
+            })
+        });
+
+        let postData = qs.stringify({
+            "url": nowlocation,
+            "nonceStr": "abc",
+        });
+
+        that.com.postData(that, url + "/wx/getSignature", postData, (response) => {
+            var signature = response.data.signature;
+            var timestamp = response.data.timestamp;
+            console.log(signature)
+            console.log(timestamp)
+            var appId = "wx1c753decf0a896a9";
+            wx.config({
+                debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+                appId: appId, // 必填，公众号的唯一标识
+                timestamp: timestamp, // 必填，生成签名的时间戳
+                nonceStr: 'abc', // 必填，生成签名的随机串
+                signature: signature, // 必填，签名
+                jsApiList: ['updateAppMessageShareData', 'updateTimelineShareData'] // 必填，需要使用的JS接口列表
+            });
+        });
     }
 }

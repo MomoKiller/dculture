@@ -26,6 +26,8 @@
         <p>长按保存到本地或者转发至好友</p>
       </div>
     </div>
+
+    <img src="" class="content-img" ref="contentImg">
   </div>
 </template>
 
