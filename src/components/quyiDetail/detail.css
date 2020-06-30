@@ -109,6 +109,12 @@
 
 .detail .content-wrap ul li.autho p.name {
     margin-top: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    /*显示行数*/
+    -webkit-box-orient: vertical;
 }
 
 .detail .content-wrap ul li.autho p.name a {
