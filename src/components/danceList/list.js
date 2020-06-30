@@ -17,6 +17,7 @@ export default {
         };
     },
     mounted() {
+        document.title = this.$router.currentRoute.name;
         // 监听滚动
         window.addEventListener('scroll', this.getScrollPosition, true);
 

@@ -2,6 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/home/Home.vue'
 import Booklist from '@/components/booklist/List.vue'
+import Paintinglist from '@/components/paintinglist/List.vue'
+import PaintingDetail from '@/components/paintingDetail/Detail.vue'
 import DanceList from '@/components/danceList/List.vue'
 import QuyiList from '@/components/quyiList/List.vue'
 import BookDetail from '@/components/bookDetail/Detail.vue'
@@ -28,16 +30,20 @@ export default new Router({
         component: Home
     }, {
         path: '/bookList',
-        name: 'bookList',
+        name: '图书',
         component: Booklist
     }, {
         path: '/danceList',
-        name: 'danceList',
+        name: '舞蹈',
         component: DanceList
     }, {
         path: '/quyiList',
-        name: 'quyiList',
+        name: '曲艺',
         component: QuyiList
+    }, {
+        path: '/paintinglist',
+        name: '书画',
+        component: Paintinglist
     }, {
         path: '/bookDetail',
         name: 'bookDetail',
@@ -54,5 +60,9 @@ export default new Router({
         path: '/share',
         name: 'share',
         component: Share
+    }, {
+        path: '/paintingDetail',
+        name: 'paintingDetail',
+        component: PaintingDetail
     }]
 })

@@ -1,0 +1,261 @@
+.detail {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+
+/* header */
+
+
+/* .detail header {
+    width: 100%;
+    padding-bottom: 56%;
+    background: url(http://www.xinzhimin.xyz/detail-bg-header.png) no-repeat;
+    background-position: center top;
+    background-size: 100%;
+    overflow: hidden;
+} */
+
+.detail header {
+    width: 100%;
+    overflow: hidden;
+}
+
+.detail header .bg-header {
+    width: 100%;
+    height: 0;
+    padding-bottom: 40%;
+    background: url(http://www.xinzhimin.xyz/list-bg-header-painting.png) no-repeat;
+    background-position: center top;
+    background-size: 100%;
+}
+
+.detail header .bg-over {
+    width: 100%;
+    height: 0;
+    padding-bottom: 16.5%;
+    background: url(http://www.xinzhimin.xyz/detail-bg-over.png) no-repeat;
+    background-position: center top;
+    background-size: 100%;
+}
+
+
+/* content */
+
+.detail .content-wrap {
+    width: 100%;
+    overflow: hidden;
+}
+
+.detail .content-wrap ul {
+    width: 100%;
+}
+
+.detail .content-wrap ul li {
+    width: calc(100% - 5rem);
+    min-height: 7rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    border: 1.5rem solid transparent;
+    border-image: url(http://www.xinzhimin.xyz/detail-bg-img-list.png) 30 30 stretch;
+    /* Old Firefox */
+    -moz-border-image: url(http://www.xinzhimin.xyz/detail-bg-img-list.png) 30 30 stretch;
+    /* Safari and Chrome */
+    -webkit-border-image: url(http://www.xinzhimin.xyz/detail-bg-img-list.png) 30 30 stretch;
+    /* Opera */
+    -o-border-image: url(http://www.xinzhimin.xyz/detail-bg-img-list.png) 30 30 stretch;
+}
+
+.detail .content-wrap ul li p.name {
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'STSong';
+}
+
+.detail .content-wrap ul li p.info {
+    /* height: 2rem; */
+    line-height: 2rem;
+    font-size: 1rem;
+    text-align: left;
+    color: #999999;
+    padding-bottom: 1rem;
+    text-indent: 2.5rem;
+}
+
+.detail .content-wrap ul li.cover {
+    /* height: 17.5rem; */
+}
+
+.detail .content-wrap ul li.cover img {
+    /* height: 17.5rem; */
+    /* max-width: 100%; */
+    width: 100%;
+}
+
+.detail .content-wrap ul li.cover .player {
+    height: 20.5rem;
+    width: 100%;
+}
+
+.detail .content-wrap ul li.autho {
+    background: url(http://www.xinzhimin.xyz/detail-bg-list.png) no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.detail .content-wrap ul li.autho p.name {
+    margin-top: 1rem;
+}
+
+.detail .content-wrap ul li.autho p.name a {
+    color: #999999;
+}
+
+.detail .content-wrap ul li.autho p.name a.active {
+    color: #333333;
+}
+
+.detail .content-wrap ul li.autho a.autho {
+    /* height: 2rem; */
+    line-height: 2rem;
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.detail .content-wrap ul li.autho a span {
+    color: #999999;
+}
+
+.detail .content-wrap ul li.info {}
+
+.detail .content-wrap ul li.teams {}
+
+.detail .content-wrap .welcome {
+    width: calc(100% - 5rem);
+    min-height: 12rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    border: 1.5rem solid transparent;
+    border-image: url(http://www.xinzhimin.xyz/detail-bg-img-list2.png) 30 30 stretch;
+    /* Old Firefox */
+    -moz-border-image: url(http://www.xinzhimin.xyz/detail-bg-img-list2.png) 30 30 stretch;
+    /* Safari and Chrome */
+    -webkit-border-image: url(http://www.xinzhimin.xyz/detail-bg-img-list2.png) 30 30 stretch;
+    /* Opera */
+    -o-border-image: url(http://www.xinzhimin.xyz/detail-bg-img-list2.png) 30 30 stretch;
+}
+
+.detail .content-wrap .welcome .wrap {
+    background: url(http://www.xinzhimin.xyz/detail-bg-list2.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.detail .content-wrap .welcome .title {
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 1.5rem;
+    color: #333333;
+    margin-top: 2rem;
+}
+
+.detail .content-wrap .welcome .likes {
+    color: #666666;
+    height: 2rem;
+    line-height: 2rem;
+}
+
+.detail .content-wrap .welcome .likes a {
+    color: #ad8a5f;
+    margin: 0 0.2rem;
+    height: 2rem;
+    line-height: 2rem;
+    display: inline-block;
+}
+
+.detail .content-wrap .welcome .btn-like {
+    display: block;
+    width: 10.3rem;
+    height: 3rem;
+    background: url(http://www.xinzhimin.xyz/detail-btn-likes.png) no-repeat;
+    background-size: 100%;
+    background-position: center;
+    margin: 1rem auto;
+}
+
+.detail .content-wrap .welcome .btn-cancle {
+    display: block;
+    width: 10.3rem;
+    height: 3rem;
+    line-height: 3rem;
+    background: url(http://www.xinzhimin.xyz/detail-btn-likes-cancle.png) no-repeat;
+    background-size: 100%;
+    background-position: center;
+    margin: 1rem auto;
+}
+
+
+/* footer */
+
+.detail footer {
+    width: 100%;
+    height: 11.5rem;
+}
+
+.detail footer ul {
+    width: calc(100% - 4rem);
+    height: 100%;
+    margin: 0 auto;
+}
+
+.detail footer ul li {
+    width: 50%;
+    height: 5.75rem;
+    float: left;
+}
+
+.detail footer ul li a.btn-poster {
+    display: block;
+    width: 13.2rem;
+    height: 3.5rem;
+    background: url(http://www.xinzhimin.xyz/detail-btn-poster.png) no-repeat;
+    background-size: 100%;
+    background-position: center;
+    margin: 1rem auto 0;
+}
+
+.detail footer ul li a.btn-share {
+    display: block;
+    width: 13.2rem;
+    height: 3.5rem;
+    background: url(http://www.xinzhimin.xyz/detail-btn-share.png) no-repeat;
+    background-size: 100%;
+    background-position: center;
+    margin: 1rem auto 0;
+}
+
+.detail footer ul li a.btn-back {
+    display: block;
+    width: 15.3rem;
+    height: 3.1rem;
+    background: url(http://www.xinzhimin.xyz/detail-btn-back.png) no-repeat;
+    background-size: 100%;
+    background-position: center;
+    margin: 1rem auto 0;
+}
+
+.detail footer ul li a.btn-continue {
+    display: block;
+    width: 15.3rem;
+    height: 3.1rem;
+    background: url(http://www.xinzhimin.xyz/detail-btn-continue.png) no-repeat;
+    background-size: 100%;
+    background-position: center;
+    margin: 1rem auto 0;
+}

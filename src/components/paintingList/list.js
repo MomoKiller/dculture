@@ -1,7 +1,7 @@
 import DetailFoot from '@/components/detailFoot/DetailFoot.vue'
 
 export default {
-    name: "BookList",
+    name: "PaintingList",
     components: { DetailFoot },
     data() {
         return {

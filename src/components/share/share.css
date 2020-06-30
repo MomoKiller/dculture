@@ -51,6 +51,12 @@
     background-size: 100%;
 }
 
+.share .content .header.painting {
+    background: url(http://www.xinzhimin.xyz/list-bg-header-painting.png) no-repeat;
+    background-position: center top;
+    background-size: 100%;
+}
+
 .share .content .header.dance {
     background: url(http://www.xinzhimin.xyz/list-bg-header-dance.png) no-repeat;
     background-position: center top;

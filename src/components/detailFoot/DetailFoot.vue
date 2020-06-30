@@ -8,16 +8,16 @@
       </div>
       <ul>
         <li class="toBook" @click="toPage('/bookList')"></li>
-        <li class="toMusic" @click="toPage('/musicList')"></li>
+        <li class="toMusic" @click="toPage('')"></li>
         <li class="toDance" @click="toPage('/danceList')"></li>
-        <li class="toPainting" @click="toPage('pictureList')"></li>
+        <li class="toPainting" @click="toPage('/paintingList')"></li>
         <li class="toClass">
-          <i @click="toPage(5)"></i>
+          <i @click="toPage('/home1')"></i>
         </li>
-        <li class="toOpera" @click="toPage('/operaList')"></li>
+        <li class="toOpera" @click="toPage('')"></li>
         <li class="toQuyi" @click="toPage('/quyiList')"></li>
-        <li class="toRecord" @click="toPage('/recordList')"></li>
-        <li class="toRadio" @click="toPage('/radioList')"></li>
+        <li class="toRecord" @click="toPage('')"></li>
+        <li class="toRadio" @click="toPage('')"></li>
       </ul>
     </footer>
 </template>

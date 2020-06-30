@@ -8,6 +8,7 @@ export default {
         };
     },
     mounted() {
+        document.title = this.$router.currentRoute.name;
         this.initBoat();
     },
     methods: {

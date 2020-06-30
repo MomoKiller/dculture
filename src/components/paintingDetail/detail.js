@@ -1,7 +1,7 @@
 import Share from '@/components/share/share.vue'
 
 export default {
-    name: "BookDetail",
+    name: "PaintingDetail",
     components: { Share },
     data() {
         return {
@@ -55,7 +55,7 @@ export default {
                     self.showPlayer();
                     // 分享海报数据
                     self.postData = self.works;
-                    self.postData.header = 'painting';
+                    self.postData.header = 'book';
                 }
             })
 
