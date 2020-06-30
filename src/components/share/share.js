@@ -28,7 +28,7 @@ export default {
         },
         gotouchstart(e) {
             // 阻止默认事件
-            e.preventDefault();
+            // e.preventDefault();
             let self = this;
             clearTimeout(this.timeOutEvent); //清除定时器
             this.timeOutEvent = 0;
@@ -40,13 +40,13 @@ export default {
         /* 移动触发事件 */
         gotouchmove(e) {
             // 阻止默认事件
-            e.preventDefault();
+            // e.preventDefault();
             clearTimeout(this.timeOutEvent);
             if (this.timeOutEvent != 0) {}
         },
         gotouchend(e) {
             // 阻止默认事件
-            e.preventDefault();
+            // e.preventDefault();
             clearTimeout(this.timeOutEvent); //清除定时器
             this.timeOutEvent = 0;
         },

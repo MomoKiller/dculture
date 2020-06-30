@@ -18,6 +18,7 @@ Vue.use(Router)
 
 export default new Router({
     mode: 'history', // 使用history模式
+    base: '/vue/',
     routes: [{
         path: '/',
         name: 'Home',
