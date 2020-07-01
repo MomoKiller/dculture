@@ -25,7 +25,7 @@ export default new Router({
         component: Home1
     }, {
         path: '/home1',
-        name: 'home1',
+        name: '常熟市精品文化数字展厅',
         component: Home1
     }, {
         path: '/home',

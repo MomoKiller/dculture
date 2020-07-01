@@ -10,7 +10,7 @@
         <li class="toBook" @click="toPage('/bookList')"></li>
         <li class="toMusic" @click="toPage('')"></li>
         <li class="toDance" @click="toPage('/danceList')"></li>
-        <li class="toPainting" @click="toPage('/paintingList')"></li>
+        <li class="toPainting" @click="toPage('')"></li>
         <li class="toClass">
           <i @click="toPage('/home1')"></i>
         </li>

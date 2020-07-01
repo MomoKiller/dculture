@@ -161,3 +161,12 @@
 .share .content .content-img {
     width: 100%;
 }
+.o-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0.5;
+    height: 91%;
+    z-index: 999999;
+  }
