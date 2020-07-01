@@ -7,7 +7,7 @@ export default {
     data() {
         return {
             works: {},
-            isLikeClick: JSON.parse(localStorage.getItem(this.$route.query.videoid)) || false,
+            isLikeClick: JSON.parse(localStorage.getItem(this.$route.query.pdfid)) || false,
             postData: {} // 分享海报数据
         };
     },
@@ -52,7 +52,7 @@ export default {
         // 点赞
         lickCount(type) {
             let self = this;
-            let listUrl = 'http://xinzhimin.xyz/video/addorcutlike?videoid=' + this.$route.query.videoid + '&operate=' + type;
+            let listUrl = 'http://xinzhimin.xyz/book/addorcutlike?pdfid=' + this.$route.query.pdfid + '&operate=' + type;
             this.com.getData(this, listUrl, {}, (res) => {
                 console.log('接口返回的数据', res);
                 // 更新点赞人数

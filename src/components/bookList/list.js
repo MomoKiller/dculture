@@ -38,11 +38,14 @@ export default {
                 console.log('接口返回的数据', res);
                 if (res && res.list) {
                     this.totleNum = res.lastPage;
-                    this.listObj = [
-                        ...this.listObj,
-                        ...res.list
-                    ];
-                    this.seachParams.currentPage++;
+                    if(this.seachParams.currentPage <= this.totleNum){
+                        this.listObj = [
+                            ...this.listObj,
+                            ...res.list
+                        ];
+                        this.seachParams.currentPage++;
+                    }
+                    
                 }
             });
         },

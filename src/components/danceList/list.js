@@ -35,14 +35,18 @@ export default {
             this.com.getData(this, listUrl, {}, (res) => {
                 console.log('接口返回的数据', res);
                 if (res && res.list) {
-                    this.totleNum = res.lastPage;
-                    this.listObj = [
-                        ...this.listObj,
-                        ...res.list
-                    ];
-                    this.seachParams.currentPage++;
-                }
-            });
+                        //alert(this.seachParams.currentPage <= this.totleNum)
+                        this.totleNum = res.lastPage;
+                        if(this.seachParams.currentPage <= this.totleNum){
+                            this.listObj = [
+                                ...this.listObj,
+                                ...res.list
+                            ];
+                            this.seachParams.currentPage++;
+                        }
+                        
+                    }
+                });
         },
         // 列表查看详情
         toDetail(item) {
