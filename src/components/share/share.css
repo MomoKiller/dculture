@@ -30,7 +30,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.coverdiv{
+
+.coverdiv {
     /* height: 100%;
     width: 100%;
     background-color:red;
@@ -40,6 +41,7 @@
     top: 0;
     left: 0; */
 }
+
 .share .content .content-wrap {
     width: 100%;
     background-color: #ffffff;
@@ -171,16 +173,15 @@
 .share .content .content-img {
     width: 100%;
 }
-.o-img{
-    position: absolute;
+
+.o-img {
+    /* position: absolute; */
     top: 0;
     left: 0;
     width: 100%;
-    opacity: 0.5;
-    height: 91%;
     z-index: 999999;
-    background-color: red;
-  }
-  .o-img-img{
-      width: 100%;
-  }
+}
+
+.o-img-img {
+    width: 100%;
+}
