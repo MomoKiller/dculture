@@ -30,7 +30,16 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
+.coverdiv{
+    /* height: 100%;
+    width: 100%;
+    background-color:red;
+    opacity: 0.6;
+    filter: Alpha(opacity=60);
+    position: absolute;
+    top: 0;
+    left: 0; */
+}
 .share .content .content-wrap {
     width: 100%;
     background-color: #ffffff;
@@ -80,7 +89,8 @@
 }
 
 .share .content .work-img img {
-    width: calc(100% - 3rem);
+    /* width: calc(100% - 3rem); */
+    height: 20rem;
     margin: 1.5rem 0 1.3rem;
 }
 
@@ -169,4 +179,8 @@
     opacity: 0.5;
     height: 91%;
     z-index: 999999;
+    background-color: red;
+  }
+  .o-img-img{
+      width: 100%;
   }

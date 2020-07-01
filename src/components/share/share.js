@@ -10,7 +10,9 @@ export default {
             timeOutEvent: 0, // 定时器
             ercode: '',
             hasImg: false,
-            imgfordown:""
+            imgfordown:"",
+            showdiv:false,
+            
         };
     },
     mounted() {
@@ -20,15 +22,17 @@ export default {
     methods: {
         // 生成海报
         toPost() {
-            console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>")
+            console.log("this is toPost.....")
             let self = this;
             let DomeW = self.$refs.postref.offsetWidth; //获取目标元素的宽高
             let DemoH = self.$refs.postref.offsetHeight; //获取目标元素的宽高
+            console.log("this is toPost....."+DomeW+"==="+DemoH)
             html2canvas(self.$refs.postref, { useCORS: true, width: DomeW, height: DemoH }).then(function(canvas) {
                 let imgUri = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"); // 获取生成的图片的url
-               // console.log(imgUri)
+                console.log("this is html2canvas")
                 self.downloadIamge(imgUri, self.postData.videoname);
             })
+           
         },
         gotouchstart(e) {
             // 阻止默认事件
@@ -63,7 +67,8 @@ export default {
             var imgurl = '';
             var that_ = this;
             image.onload = function() {
-                var canvas = document.createElement("canvas");
+                //var canvas = document.createElement("canvas");
+                var canvas = document.getElementById('aa');
                 canvas.width = image.width;
                 canvas.height = image.height;
                 var context = canvas.getContext("2d");
@@ -75,17 +80,45 @@ export default {
                 a.href = url; // 将生成的URL设置为a.href属性
                 a.dispatchEvent(event); // 触发a的单击事件
                 that_.imgfordown = url;
+                that_.showdiv = true;
                 // self.$refs.contentImg.src = url;
                 // self.hasImg = true;
                 // self.savePicture(url);
+                
             };
             image.src = imgsrc;
-            
-
+            console.log(imgsrc)
+            //this.downloadFileByBase64(imgsrc, 'image/png', 'tupian.png');
         },
+        // dataURLtoBlob(base64Str, mimeTypeStr) {
+        //     console.log("1---this is dataURLtoBlob")
+		// 	var bstr = atob(base64Str), n = bstr.length, u8arr = new Uint8Array(n);
+		// 	while (n--) {
+		// 		u8arr[n] = bstr.charCodeAt(n);
+		// 	}
+		// 	return new Blob([u8arr], { type: mimeTypeStr });
+		// },
+		/**创建一个a标签，并做下载点击事件*/
+		// downloadFile(hrefUrl,fileName){
+        //     console.log("2---this is downloadFile")
+		// 	var a = document.createElement("a")
+		// 	a.setAttribute("href",hrefUrl)
+		// 	a.setAttribute("download",fileName)
+		// 	a.setAttribute("target","_blank")
+		// 	let clickEvent = document.createEvent("MouseEvents");
+		// 	clickEvent.initEvent("click", true, true);  
+		// 	a.dispatchEvent(clickEvent);
+		// },
+        // downloadFileByBase64(base64Str, mimeTypeStr, fileName){
+        //     console.log("3---this is downloadFileByBase64")
+		// 	var myBlob = this.dataURLtoBlob(base64Str, mimeTypeStr)
+		// 	var myUrl = URL.createObjectURL(myBlob)
+		// 	this.downloadFile(myUrl,fileName)
+		// },
         /* 打开窗口 */
         shareOpen() {
             this.shareState = true;
+            //this.toPost()
         },
         /* 关闭窗口 */
         shareClose() {
@@ -113,7 +146,7 @@ export default {
             e.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
             a.dispatchEvent(e);
             URL.revokeObjectURL(url);
-        }
-
-    }
+        },
+    },
+     
 }
