@@ -25,7 +25,7 @@
       <!-- <img class="o-img" :src="imgfordown"> -->
       </div>
       <img src="" class="content-img" ref="contentImg">
-       <img class="o-img" src="http://www.xinzhimin.xyz/yijiazi.png">
+       <!-- <img class="o-img" src="http://www.xinzhimin.xyz/yijiazi.png"> -->
       <div class="label-tip">
         <p>长按保存到本地或者转发至好友</p>
       </div>
