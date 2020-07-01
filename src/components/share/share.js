@@ -9,7 +9,6 @@ export default {
             shareState: false,
             timeOutEvent: 0, // 定时器
             ercode: '',
-            hasImg: false,
             imgfordown: "",
             showdiv: false,
             imgHref: '',
@@ -34,7 +33,6 @@ export default {
                 // self.downloadIamge(imgUri, self.postData.videoname);
 
                 self.$refs.contentImg.src = imgUri;
-                self.hasImg = true;
 
                 self.imgName = self.postData.videoname + '.png';
                 self.imgHref = imgUri;
@@ -98,7 +96,6 @@ export default {
                 // that_.showdiv = true;
 
                 self.$refs.contentImg.src = url;
-                self.hasImg = true;
                 // self.savePicture(url);
 
             };
@@ -115,7 +112,6 @@ export default {
         /* 关闭窗口 */
         shareClose() {
             this.shareState = false;
-            this.hasImg = false;
         },
         /* 生成的二维码 */
         useqrcode() {　　
