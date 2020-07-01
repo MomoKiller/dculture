@@ -12,7 +12,7 @@ export default {
             hasImg: false,
             imgfordown: "",
             showdiv: false,
-
+            imgHref: ''
         };
     },
     mounted() {
@@ -35,6 +35,7 @@ export default {
                 self.$refs.contentImg.src = imgUri;
                 self.hasImg = true;
 
+                self.imgHref = imgUri;
 
             })
 
