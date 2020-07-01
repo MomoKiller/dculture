@@ -34,6 +34,8 @@ export default {
 
                 self.$refs.contentImg.src = imgUri;
                 self.hasImg = true;
+
+
             })
 
         },
@@ -130,7 +132,7 @@ export default {
             var url = URL.createObjectURL(blob);
             var a = document.createElement('a');
             a.href = Url;
-            a.download = this.postData.videoname;
+            a.download = this.postData.videoname + '.png';
             // a.download = Url.replace(/(.*\/)*([^.]+.*)/ig, "$2").split("?")[0];
             var e = document.createEvent('MouseEvents');
             e.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
