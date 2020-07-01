@@ -67,10 +67,10 @@ export default {
             var imgurl = '';
             var that_ = this;
             image.onload = function() {
-                //var canvas = document.createElement("canvas");
-                var canvas = document.getElementById('aa');
-                canvas.width = image.width;
-                canvas.height = image.height;
+                var canvas = document.createElement("canvas");
+                // var canvas = document.getElementById('aa');
+                 canvas.width = image.width;
+                 canvas.height = image.height;
                 var context = canvas.getContext("2d");
                 context.drawImage(image, 0, 0, image.width, image.height);
                 var url = canvas.toDataURL("image/png"); //得到图片的base64编码数据
