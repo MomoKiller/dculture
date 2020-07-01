@@ -12,7 +12,8 @@ export default {
             hasImg: false,
             imgfordown: "",
             showdiv: false,
-            imgHref: ''
+            imgHref: '',
+            imgName: ''
         };
     },
     mounted() {
@@ -35,6 +36,7 @@ export default {
                 self.$refs.contentImg.src = imgUri;
                 self.hasImg = true;
 
+                self.imgName = self.postData.videoname + '.png';
                 self.imgHref = imgUri;
 
             })

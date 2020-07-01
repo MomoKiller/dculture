@@ -173,6 +173,7 @@
 
 .share .content .content-img {
     width: 100%;
+    z-index: 100;
 }
 
 .o-img {
@@ -190,5 +191,4 @@
 a.down {
     overflow: hidden;
     display: block;
-    z-index: 100;
 }

@@ -24,7 +24,8 @@
       <!-- <div v-show="showdiv" class="o-img" >
           <img class="o-img-img" :src="imgfordown" >
       </div> -->
-      <a @click="savePicture()" class="down" href="#">
+      <!-- @click="savePicture()" -->
+      <a class="down" :href="imgHref" :download="imgName">
         <img src="" class="content-img" ref="contentImg">
       </a>
       
