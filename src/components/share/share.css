@@ -26,9 +26,10 @@
     width: 86.67%;
     overflow: hidden;
     position: absolute;
-    top: 50%;
+    top: 5%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
+    transform: translateX(-50%);
 }
 
 .coverdiv {
@@ -184,4 +185,9 @@
 
 .o-img-img {
     width: 100%;
+}
+
+a.down {
+    overflow: hidden;
+    display: block;
 }

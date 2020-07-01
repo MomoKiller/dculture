@@ -100,8 +100,6 @@ export default {
 
             };
             image.src = imgsrc;
-            console.log(imgsrc)
-                //this.downloadFileByBase64(imgsrc, 'image/png', 'tupian.png');
         },
         /* 打开窗口 */
         shareOpen() {
@@ -134,12 +132,22 @@ export default {
             var a = document.createElement('a');
             a.href = Url;
             a.download = this.postData.videoname + '.png';
-            // a.download = Url.replace(/(.*\/)*([^.]+.*)/ig, "$2").split("?")[0];
             var e = document.createEvent('MouseEvents');
             e.initMouseEvent('click', true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
             a.dispatchEvent(e);
             URL.revokeObjectURL(url);
-        },
+
+
+            // let self = this;
+            // let DomeW = self.$refs.contentImg.offsetWidth; //获取目标元素的宽高
+            // let DemoH = self.$refs.contentImg.offsetHeight; //获取目标元素的宽高
+            // html2canvas(self.$refs.contentImg, { useCORS: true, width: DomeW, height: DemoH }).then(function(canvas) {
+            //     var imgUri = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"); // 获取生成的图片的url
+            //     window.location.href = imgUri; // 下载图片
+            // });
+
+
+        }
     },
 
 }

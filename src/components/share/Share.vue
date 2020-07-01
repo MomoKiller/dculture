@@ -1,7 +1,7 @@
 <template>
   <div class="share" v-show="shareState">
     <div class="mask" @click="shareClose()"></div>
-    <div class="content" @click="savePicture()">
+    <div class="content">
       <div v-if="!hasImg" class="content-wrap" ref="postref" ><!-- 长按事件 -->
         <div class="header" :class="postData.header"></div>
         <div class="work-img">
@@ -24,8 +24,10 @@
       <!-- <div v-show="showdiv" class="o-img" >
           <img class="o-img-img" :src="imgfordown" >
       </div> -->
-      <img src="" class="content-img" ref="contentImg">
-       <!-- <img class="o-img" src="http://www.xinzhimin.xyz/yijiazi.png"> -->
+      <a @click="savePicture()" class="down">
+        <img src="" class="content-img" ref="contentImg">
+      </a>
+      
       <div class="label-tip">
         <p>长按保存到本地或者转发至好友</p>
       </div>
