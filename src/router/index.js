@@ -10,6 +10,7 @@ import BookDetail from '@/components/bookDetail/Detail.vue'
 import DanceDetail from '@/components/danceDetail/Detail.vue'
 import QuyiDetail from '@/components/quyiDetail/Detail.vue'
 import Share from '../components/share/share.vue'
+import test from '../components/share/test.vue'
 import Home1 from '@/components/home1/home1.vue'
 import ShareTip from '@/components/shareTip/ShareTip.vue'
 
@@ -63,6 +64,10 @@ export default new Router({
         path: '/share',
         name: 'share',
         component: Share
+    }, {
+        path: '/test',
+        name: 'test',
+        component: test
     }, {
         path: '/paintingDetail',
         name: 'paintingDetail',
