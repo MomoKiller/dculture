@@ -10,7 +10,7 @@
       <div class="bg-part-3"></div>
     </div>
     <div class="flower"></div>
-    <div class="theme">常熟市精品文化数字展厅</div>
+    <div class="theme"></div>
     <div class="enter-wrap">
       <i></i>
       <a class="enter" @click="toEnter()"></a>

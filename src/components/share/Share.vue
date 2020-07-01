@@ -22,6 +22,7 @@
           <div class="tip"></div>
         </div>
       </div>
+      <img class="testimg" :src="testimg">
       <img src="" class="content-img" ref="contentImg">
       <div class="label-tip">
         <p>长按保存到本地或者转发至好友</p>

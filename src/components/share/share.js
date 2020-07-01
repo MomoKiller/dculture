@@ -9,7 +9,8 @@ export default {
             shareState: false,
             timeOutEvent: 0, // 定时器
             ercode: '',
-            hasImg: false
+            hasImg: false,
+            testimg:""
         };
     },
     mounted() {
@@ -19,11 +20,13 @@ export default {
     methods: {
         // 生成海报
         toPost() {
+            console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>")
             let self = this;
             let DomeW = self.$refs.postref.offsetWidth; //获取目标元素的宽高
             let DemoH = self.$refs.postref.offsetHeight; //获取目标元素的宽高
             html2canvas(self.$refs.postref, { useCORS: true, width: DomeW, height: DemoH }).then(function(canvas) {
                 let imgUri = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"); // 获取生成的图片的url
+               // console.log(imgUri)
                 self.downloadIamge(imgUri, self.postData.videoname);
             })
         },
@@ -57,6 +60,8 @@ export default {
             var image = new Image();
             // 解决跨域 Canvas 污染问题
             image.setAttribute("crossOrigin", "anonymous");
+            var imgurl = '';
+            var that_ = this;
             image.onload = function() {
                 var canvas = document.createElement("canvas");
                 canvas.width = image.width;
@@ -69,13 +74,12 @@ export default {
                 a.download = name || "photo"; // 设置图片名称
                 a.href = url; // 将生成的URL设置为a.href属性
                 a.dispatchEvent(event); // 触发a的单击事件
-
                 // self.$refs.contentImg.src = url;
                 // self.hasImg = true;
                 // self.savePicture(url);
             };
             image.src = imgsrc;
-
+            
 
         },
         /* 打开窗口 */
@@ -88,7 +92,8 @@ export default {
             this.hasImg = false;
         },
         /* 生成的二维码 */
-        useqrcode() {　　　　
+        useqrcode() {　　
+            console.log("useqrcode")　;　
             var canvas = this.$refs.ercode;
             this.ercode = location.href;
             QRCode.toCanvas(canvas, this.ercode, function(error) {
