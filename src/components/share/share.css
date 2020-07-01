@@ -190,4 +190,5 @@
 a.down {
     overflow: hidden;
     display: block;
+    z-index: 100;
 }
