@@ -16,7 +16,7 @@ export default {
         };
     },
     mounted() {
-        this.useqrcode();
+        // this.useqrcode();
         // this.toPost();
     },
     methods: {
@@ -107,7 +107,8 @@ export default {
         shareOpen() {
             this.shareState = true;
             // 生成海报
-            setTimeout(this.toPost, 0);
+            setTimeout(this.useqrcode, 0);
+            setTimeout(this.toPost, 10);
             // this.toPost()
         },
         /* 关闭窗口 */
