@@ -10,7 +10,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "html2canvas": "^1.0.0-rc.5",
+    "html2canvas": "^1.0.0-rc.4",
     "less": "^3.11.1",
     "less-loader": "^5.0.0",
     "qrcode": "^1.4.4",
