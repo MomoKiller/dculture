@@ -21,6 +21,9 @@ export default {
     },
     methods: {
         // 生成海报
+        goPic() {
+            window.location.href = this.imgHref;
+        },
         toPost() {
             let _window = window;
             let self = this;
@@ -38,7 +41,7 @@ export default {
                         self.imgHref = 'http://xinzhimin.xyz/' + res;
                         // self.imgName = self.postData.videoname + '.png';
                         // _window.open(self.imgHref, '_blank');
-                        _window.location.href = self.imgHref;
+                        // _window.location.href = self.imgHref;
                     });
                 });
 

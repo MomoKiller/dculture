@@ -23,7 +23,8 @@
 }
 
 .share .content {
-    width: 86.67%;
+    /* width: 86.67%; */
+    width: 60%;
     overflow: hidden;
     position: absolute;
     top: 5%;
@@ -130,9 +131,12 @@
 }
 
 .share .content .ercode-wrap .tip {
-    width: 75.13%;
+    /* width: 75.13%;
     height: 0;
-    padding-bottom: 20.13%;
+    padding-bottom: 20.13%; */
+    width: 62.13%;
+    height: 0;
+    padding-bottom: 16.13%;
     background: url(http://www.xinzhimin.xyz/share-bg-foot2.png) no-repeat;
     background-position: center center;
     background-size: 100% 100%;

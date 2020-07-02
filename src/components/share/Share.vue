@@ -25,7 +25,8 @@
 
       </div>
       <div class="label-tip">
-        <p>长按保存到本地或者转发至好友</p>
+        <!-- <p>长按保存到本地或者转发至好友</p> -->
+        <p @click="goPic()">点我去保存</p>
       </div>
     </div>
 
