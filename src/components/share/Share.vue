@@ -23,6 +23,9 @@
         <a class="down" :href="imgHref" :download="imgName">
           <img src="" class="content-img" ref="contentImg">
         </a>
+
+        <a class="down" @click="testImg()" ref="test" href="#" :download="imgName"></a>
+
       </div>
       <!-- @touchstart="gotouchstart($event)" @touchmove="gotouchmove($event)" @touchend="gotouchend($event)" -->
       <!-- <div v-show="showdiv" class="o-img" >

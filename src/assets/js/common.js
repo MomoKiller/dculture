@@ -98,7 +98,7 @@ export default {
         let previousRequest = null;
         let isResult = false;
         that.$http.post(url, d, {
-            emulateJSON: false,
+            emulateJSON: true,
             headers: {
                 'Content-Type': 'application/json;charset=UTF-8',
                 'X-Requested-With': 'XMLHttpRequest',
@@ -118,7 +118,7 @@ export default {
                 previousRequest.abort();
                 that.com.postData(that, url, d, call);
             }
-        }, 5000);
+        }, 15000);
     },
     // post 接口提交; 参数 stringify
     postStringfy: function(that, url, d, call) {

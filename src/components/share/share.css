@@ -198,3 +198,8 @@ a.down {
     height: 100%;
     width: 100%;
 }
+
+a.down img {
+    height: 0;
+    width: 0;
+}

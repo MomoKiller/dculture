@@ -146,7 +146,56 @@ export default {
             // });
 
 
+        },
+        // 测试接口
+
+        testImg() {
+            // let params = { 'imguri': this.$refs.contentImg.src };
+
+            // let listUrl = 'http://xinzhimin.xyz/base64img';
+            // this.com.postData(this, listUrl, params, (res) => {
+            //     console.log('测时接口返回的数据', res);
+
+            // });
+            let self = this;
+            this.yasuo(this.$refs.contentImg.src, 1.5, (a, b) => {
+                console.log(a, b);
+
+                let params = { 'imguri': b };
+
+                let listUrl = 'http://xinzhimin.xyz/base64img';
+                self.com.postData(self, listUrl, params, (res) => {
+                    console.log('测时接口返回的数据', res);
+                    // document.body.innerHTML = res;
+                    self.$refs.test.innerHTML = res;
+                });
+            });
+        },
+
+        yasuo(base64, bili, callback) {
+            let self = this;
+            console.log("执行缩放程序,bili=" + bili);
+            //处理缩放，转格式
+            var _img = new Image();
+            _img.src = base64;
+            _img.onload = function() {
+                var _canvas = document.createElement("canvas");
+                var w = self.$refs.postref.offsetWidth / bili;
+                var h = self.$refs.postref.offsetHeight / bili;
+                _canvas.setAttribute("width", w);
+                _canvas.setAttribute("height", h);
+                _canvas.getContext("2d").drawImage(this, 0, 0, w, h);
+                var base64 = _canvas.toDataURL("image/jpeg");
+                _canvas.toBlob(function(blob) {
+                    if (blob.size > 1024 * 1024) {
+                        suofang(base64, bili, callback);
+                    } else {
+                        callback(blob, base64);
+                    }
+                }, "image/jpeg");
+            }
         }
+
     },
 
 }
