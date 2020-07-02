@@ -22,6 +22,7 @@ export default {
     methods: {
         // 生成海报
         toPost() {
+            let _window = window;
             let self = this;
             let DomeW = self.$refs.postref.offsetWidth; //获取目标元素的宽高
             let DemoH = self.$refs.postref.offsetHeight; //获取目标元素的宽高
@@ -36,7 +37,8 @@ export default {
                     self.com.postData(self, listUrl, params, (res) => {
                         self.imgHref = 'http://xinzhimin.xyz/' + res;
                         // self.imgName = self.postData.videoname + '.png';
-                        window.open(self.imgHref, '_blank');
+                        // _window.open(self.imgHref, '_blank');
+                        _window.location.href = self.imgHref;
                     });
                 });
 
