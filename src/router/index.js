@@ -11,6 +11,7 @@ import DanceDetail from '@/components/danceDetail/Detail.vue'
 import QuyiDetail from '@/components/quyiDetail/Detail.vue'
 import Share from '../components/share/share.vue'
 import test from '../components/share/test.vue'
+import test4 from '../components/share/test4.vue'
 import Home1 from '@/components/home1/home1.vue'
 import ShareTip from '@/components/shareTip/ShareTip.vue'
 
@@ -21,7 +22,7 @@ export default new Router({
     base: '/vue/',
     routes: [{
         path: '/',
-        name: 'Home',
+        name: '常熟市精品文化数字展厅',
         component: Home1
     }, {
         path: '/home1',
@@ -67,6 +68,10 @@ export default new Router({
         path: '/test',
         name: 'test',
         component: test
+    }, {
+        path: '/test4',
+        name: 'test4',
+        component: test4
     }, {
         path: '/paintingDetail',
         name: 'paintingDetail',
