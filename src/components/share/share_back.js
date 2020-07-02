@@ -20,7 +20,12 @@ export default {
         // this.toPost();
     },
     methods: {
+        // 生成海报
+        goPic() {
+            window.location.href = this.imgHref;
+        },
         toPost() {
+            let _window = window;
             let self = this;
             let DomeW = self.$refs.postref.offsetWidth; //获取目标元素的宽高
             let DemoH = self.$refs.postref.offsetHeight; //获取目标元素的宽高
@@ -28,8 +33,18 @@ export default {
             html2canvas(self.$refs.postref, { useCORS: true, width: DomeW, height: DemoH }).then(function(canvas) {
                 let imgUri = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"); // 获取生成的图片的url
 
-                self.imgName = self.postData.videoname + '.png';
-                self.imgHref = imgUri;
+                // 压缩图片
+                self.yasuo(imgUri, 1, (a, b) => {
+                    let params = { 'imguri': b };
+                    let listUrl = 'http://xinzhimin.xyz/base64img';
+                    self.com.postData(self, listUrl, params, (res) => {
+                        self.imgHref = 'http://xinzhimin.xyz/' + res;
+                        // self.imgName = self.postData.videoname + '.png';
+                        // _window.open(self.imgHref, '_blank');
+                        // _window.location.href = self.imgHref;
+                    });
+                });
+
             })
 
         },

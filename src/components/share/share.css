@@ -23,8 +23,7 @@
 }
 
 .share .content {
-    /* width: 86.67%; */
-    width: 60%;
+    width: 73%;
     overflow: hidden;
     position: absolute;
     top: 5%;
@@ -131,15 +130,12 @@
 }
 
 .share .content .ercode-wrap .tip {
-    /* width: 75.13%;
+    width: 75.13%;
     height: 0;
-    padding-bottom: 20.13%; */
-    width: 62.13%;
-    height: 0;
-    padding-bottom: 16.13%;
+    padding-bottom: 20.13%;
     background: url(http://www.xinzhimin.xyz/share-bg-foot2.png) no-repeat;
     background-position: center center;
-    background-size: 100% 100%;
+    background-size: contain;
     overflow: hidden;
     float: right;
     margin-right: 1rem;
@@ -171,15 +167,9 @@
 }
 
 .share .content .label-tip p {
-    /* margin-top: 2rem;
-    font-size: 1.4rem;
-    color: #ffffff; */
-    margin-top: 0;
+    margin-top: 2rem;
     font-size: 1.4rem;
     color: #ffffff;
-    display: block;
-    height: 4rem;
-    line-height: 4rem;
 }
 
 .share .content .content-img {
@@ -207,9 +197,4 @@ a.down {
     left: 0;
     height: 100%;
     width: 100%;
-}
-
-a.down img {
-    height: 0;
-    width: 0;
 }
