@@ -35,7 +35,9 @@ export default {
                 self.$refs.contentImg.src = imgUri;
 
                 self.imgName = self.postData.videoname + '.png';
-                self.imgHref = imgUri;
+                // self.imgHref = imgUri;
+
+                self.testImg();
 
             })
 
@@ -165,9 +167,10 @@ export default {
                     console.log('测时接口返回的数据', res);
                     // document.write(res);
 
-                    let newWin = window.open('', '_blank');　　
-                    newWin.document.write(res);
+                    // let newWin = window.open('', '_blank');　　
+                    // newWin.document.write(res);
 
+                    this.imgHref = 'http://xinzhimin.xyz/' + res;
                 });
             });
         },

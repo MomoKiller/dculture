@@ -109,7 +109,11 @@ export default {
             }
         }).then(res => {
             isResult = true;
-            call(res.body);
+            if (!res.body) {
+                call(res.bodyText);
+            } else {
+                call(res.body);
+            }
         }).catch(error => {
             console.log(error);
         });
