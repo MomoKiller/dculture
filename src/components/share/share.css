@@ -171,9 +171,15 @@
 }
 
 .share .content .label-tip p {
-    margin-top: 2rem;
+    /* margin-top: 2rem;
+    font-size: 1.4rem;
+    color: #ffffff; */
+    margin-top: 0;
     font-size: 1.4rem;
     color: #ffffff;
+    display: block;
+    height: 4rem;
+    line-height: 4rem;
 }
 
 .share .content .content-img {
