@@ -30,7 +30,7 @@ export default {
                 let imgUri = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"); // 获取生成的图片的url
 
                 // 压缩图片
-                self.yasuo(imgUri, 1.5, (a, b) => {
+                self.yasuo(imgUri, 1, (a, b) => {
                     let params = { 'imguri': b };
                     let listUrl = 'http://xinzhimin.xyz/base64img';
                     self.com.postData(self, listUrl, params, (res) => {
