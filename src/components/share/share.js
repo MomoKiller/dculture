@@ -30,6 +30,16 @@ export default {
 
                 self.imgName = self.postData.videoname + '.png';
                 self.imgHref = imgUri;
+
+                // 压缩图片
+                // self.yasuo(imgUri, 1, (a, b) => {
+                //     let params = { 'imguri': b };
+                //     let listUrl = 'http://xinzhimin.xyz/base64img';
+                //     self.com.postData(self, listUrl, params, (res) => {
+                //         self.imgHref = 'http://xinzhimin.xyz/' + res;
+                //         self.imgName = self.postData.videoname + '.png';
+                //     });
+                // });
             })
 
         },
