@@ -24,9 +24,13 @@
           <img src="" class="content-img" ref="contentImg">
         </a> -->
 
-        <a class="down" @click="testImg()">
+        <a class="down" href="http://www.xinzhimin.xyz/7.jpg" :download="imgName">
           <img src="" class="content-img" ref="contentImg">
         </a>
+
+        <!-- <a class="down" @click="testImg()">
+          <img src="" class="content-img" ref="contentImg">
+        </a> -->
 
 
       </div>

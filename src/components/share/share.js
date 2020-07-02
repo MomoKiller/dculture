@@ -163,7 +163,10 @@ export default {
                 let listUrl = 'http://xinzhimin.xyz/base64img';
                 self.com.postData(self, listUrl, params, (res) => {
                     console.log('测时接口返回的数据', res);
-                    document.write(res);
+                    // document.write(res);
+
+                    let newWin = window.open('', '_blank');　　
+                    newWin.document.write(res);
 
                 });
             });
