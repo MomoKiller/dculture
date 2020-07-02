@@ -159,16 +159,12 @@ export default {
             // });
             let self = this;
             this.yasuo(this.$refs.contentImg.src, 1.5, (a, b) => {
-                console.log(a, b);
-
                 let params = { 'imguri': b };
-
                 let listUrl = 'http://xinzhimin.xyz/base64img';
                 self.com.postData(self, listUrl, params, (res) => {
                     console.log('测时接口返回的数据', res);
-                    document.body.innerHTML = res;
-                    // self.$refs.test.innerHTML = res;
-                    // window.open(res, '_blank');
+                    document.write(res);
+
                 });
             });
         },
