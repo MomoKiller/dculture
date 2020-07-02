@@ -20,21 +20,16 @@
           <div class="tip"></div>
         </div>
 
-        <a class="down" :href="imgHref" :download="imgName">
+        <!-- <a class="down" :href="imgHref" :download="imgName">
+          <img src="" class="content-img" ref="contentImg">
+        </a> -->
+
+        <a class="down" @click="testImg()">
           <img src="" class="content-img" ref="contentImg">
         </a>
 
-        <a class="down" @click="testImg()" ref="test" href="#" :download="imgName"></a>
 
       </div>
-      <!-- @touchstart="gotouchstart($event)" @touchmove="gotouchmove($event)" @touchend="gotouchend($event)" -->
-      <!-- <div v-show="showdiv" class="o-img" >
-          <img class="o-img-img" :src="imgfordown" >
-      </div> -->
-      <!-- @click="savePicture()" -->
-      <!-- <img src="" class="content-img" ref="contentImg"> -->
-      
-      
       <div class="label-tip">
         <p>长按保存到本地或者转发至好友</p>
       </div>

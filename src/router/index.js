@@ -14,7 +14,6 @@ import test from '../components/share/test.vue'
 import Home1 from '@/components/home1/home1.vue'
 import ShareTip from '@/components/shareTip/ShareTip.vue'
 
-
 Vue.use(Router)
 
 export default new Router({

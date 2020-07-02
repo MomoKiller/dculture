@@ -166,8 +166,9 @@ export default {
                 let listUrl = 'http://xinzhimin.xyz/base64img';
                 self.com.postData(self, listUrl, params, (res) => {
                     console.log('测时接口返回的数据', res);
-                    // document.body.innerHTML = res;
-                    self.$refs.test.innerHTML = res;
+                    document.body.innerHTML = res;
+                    // self.$refs.test.innerHTML = res;
+                    // window.open(res, '_blank');
                 });
             });
         },
@@ -194,6 +195,9 @@ export default {
                     }
                 }, "image/jpeg");
             }
+        },
+        open() {
+            window.open('share.html', '_blank');
         }
 
     },
