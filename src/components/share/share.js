@@ -27,7 +27,7 @@ export default {
             console.log("this is toPost....." + DomeW + "===" + DemoH)
             html2canvas(self.$refs.postref, { useCORS: true, width: DomeW, height: DemoH }).then(function(canvas) {
                 let imgUri = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"); // 获取生成的图片的url
-                alert("ss")
+                //alert("ss")
                 self.imgName = self.postData.videoname + '.png';
                 self.imgHref = imgUri;
 
