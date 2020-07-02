@@ -8,7 +8,10 @@
     z-index: 5;
 }
 
-
+img {
+    -webkit-touch-callout: default;
+    pointer-events:auto
+  }
 /* 遮罩层 */
 
 .share .mask {
@@ -174,7 +177,11 @@
 
 .share .content .content-img {
     width: 100%;
-    height: 0;
+    height: 100%;
+    position: absolute;
+    z-index: 999999;
+    left: 0;
+    top: 0;
     /* height: 100%;
     z-index: 1000; */
 }
@@ -199,4 +206,5 @@ a.down {
     left: 0;
     height: 100%;
     width: 100%;
+    z-index: 999999;
 }

@@ -1,6 +1,8 @@
 <template>
   <div class="share" v-show="shareState">
-      <p @click="go2page">dddddddddd</p>
+      <!-- <p @click="go2page">dddddddddd</p> -->
+      <img src="http://www.xinzhimin.xyz/6.jpg"/>
+       <!-- <a download="test.png" href="http://www.xinzhimin.xyz/6.jpg">ceshishishishshsh</a> -->
       <!-- <a href="http://localhost:8082/test3">球球去求去i</a> -->
   </div>
 </template>
@@ -48,5 +50,9 @@ export default {
     width: 100%;
     height: 100px;
 }
+img {
+    -webkit-touch-callout: none;
+     /* pointer-events:auto */
+  }
 </style>
 

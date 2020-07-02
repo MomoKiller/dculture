@@ -19,9 +19,9 @@
           </div>
           <div class="tip"></div>
         </div>
-        <a class="down" :href="imgHref" :download="imgName">
           <img :src="imgHref" class="content-img" ref="contentImg">
-        </a>
+        <!-- <a class="down" :href="imgHref" :download="imgName">
+        </a> -->
 
       </div>
       <div class="label-tip">
