@@ -22,7 +22,6 @@ export default {
     methods: {
         // 生成海报
         toPost() {
-            console.log("this is toPost.....")
             let self = this;
             let DomeW = self.$refs.postref.offsetWidth; //获取目标元素的宽高
             let DemoH = self.$refs.postref.offsetHeight; //获取目标元素的宽高
@@ -30,14 +29,16 @@ export default {
             html2canvas(self.$refs.postref, { useCORS: true, width: DomeW, height: DemoH }).then(function(canvas) {
                 let imgUri = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"); // 获取生成的图片的url
 
-                // self.downloadIamge(imgUri, self.postData.videoname);
-
-                self.$refs.contentImg.src = imgUri;
-
-                self.imgName = self.postData.videoname + '.png';
-                // self.imgHref = imgUri;
-
-                self.testImg();
+                // 压缩图片
+                self.yasuo(imgUri, 1.5, (a, b) => {
+                    let params = { 'imguri': b };
+                    let listUrl = 'http://xinzhimin.xyz/base64img';
+                    self.com.postData(self, listUrl, params, (res) => {
+                        self.imgHref = 'http://xinzhimin.xyz/' + res;
+                        // self.imgName = self.postData.videoname + '.png';
+                        window.open(self.imgHref, '_blank');
+                    });
+                });
 
             })
 
@@ -50,11 +51,7 @@ export default {
             this.timeOutEvent = 0;
             /* 长按触发事件 */
             this.timeOutEvent = setTimeout(function() {
-                // self.toPost();
-                self.savePicture();
-                // self.downloadIamge(self.$refs.contentImg.src, self.postData.videoname);
                 // self.savePicture();
-
             }, 600);
         },
         /* 移动触发事件 */
@@ -76,8 +73,6 @@ export default {
             var image = new Image();
             // 解决跨域 Canvas 污染问题
             image.setAttribute("crossOrigin", "anonymous");
-            var imgurl = '';
-            var that_ = this;
             image.onload = function() {
                 var canvas = document.createElement("canvas");
                 // var canvas = document.getElementById('aa');
@@ -86,20 +81,11 @@ export default {
                 var context = canvas.getContext("2d");
                 context.drawImage(image, 0, 0, image.width, image.height);
                 var url = canvas.toDataURL("image/png"); //得到图片的base64编码数据
-                // var a = document.createElement("a"); // 生成一个a元素
-                // var event = new MouseEvent("click"); // 创建一个单击事件
-                // a.download = name || "photo"; // 设置图片名称
-                // a.href = url; // 将生成的URL设置为a.href属性
-                // a.dispatchEvent(event); // 触发a的单击事件
-
-
-
-                // that_.imgfordown = url;
-                // that_.showdiv = true;
-
-                self.$refs.contentImg.src = url;
-                // self.savePicture(url);
-
+                var a = document.createElement("a"); // 生成一个a元素
+                var event = new MouseEvent("click"); // 创建一个单击事件
+                a.download = name || "photo"; // 设置图片名称
+                a.href = url; // 将生成的URL设置为a.href属性
+                a.dispatchEvent(event); // 触发a的单击事件
             };
             image.src = imgsrc;
         },
@@ -109,7 +95,6 @@ export default {
             // 生成海报
             setTimeout(this.useqrcode, 0);
             setTimeout(this.toPost, 10);
-            // this.toPost()
         },
         /* 关闭窗口 */
         shareClose() {
@@ -127,7 +112,7 @@ export default {
         },
         /* 保存图片 */
         savePicture() {
-            let Url = this.$refs.contentImg.src;
+            let Url = this.imgHref;
             var blob = new Blob([''], { type: 'application/octet-stream' });
             var url = URL.createObjectURL(blob);
             var a = document.createElement('a');
@@ -138,43 +123,7 @@ export default {
             a.dispatchEvent(e);
             URL.revokeObjectURL(url);
 
-
-            // let self = this;
-            // let DomeW = self.$refs.contentImg.offsetWidth; //获取目标元素的宽高
-            // let DemoH = self.$refs.contentImg.offsetHeight; //获取目标元素的宽高
-            // html2canvas(self.$refs.contentImg, { useCORS: true, width: DomeW, height: DemoH }).then(function(canvas) {
-            //     var imgUri = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"); // 获取生成的图片的url
-            //     window.location.href = imgUri; // 下载图片
-            // });
-
-
         },
-        // 测试接口
-
-        testImg() {
-            // let params = { 'imguri': this.$refs.contentImg.src };
-
-            // let listUrl = 'http://xinzhimin.xyz/base64img';
-            // this.com.postData(this, listUrl, params, (res) => {
-            //     console.log('测时接口返回的数据', res);
-
-            // });
-            let self = this;
-            this.yasuo(this.$refs.contentImg.src, 1.5, (a, b) => {
-                let params = { 'imguri': b };
-                let listUrl = 'http://xinzhimin.xyz/base64img';
-                self.com.postData(self, listUrl, params, (res) => {
-                    console.log('测时接口返回的数据', res);
-                    // document.write(res);
-
-                    // let newWin = window.open('', '_blank');　　
-                    // newWin.document.write(res);
-
-                    this.imgHref = 'http://xinzhimin.xyz/' + res;
-                });
-            });
-        },
-
         yasuo(base64, bili, callback) {
             let self = this;
             console.log("执行缩放程序,bili=" + bili);
@@ -191,15 +140,12 @@ export default {
                 var base64 = _canvas.toDataURL("image/jpeg");
                 _canvas.toBlob(function(blob) {
                     if (blob.size > 1024 * 1024) {
-                        suofang(base64, bili, callback);
+                        self.yasuo(base64, bili, callback);
                     } else {
                         callback(blob, base64);
                     }
                 }, "image/jpeg");
             }
-        },
-        open() {
-            window.open('share.html', '_blank');
         }
 
     },
