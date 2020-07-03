@@ -94,6 +94,7 @@ export default {
         },
         /* 打开窗口 */
         shareOpen() {
+            console.log(this.postData)
             this.shareState = true;
             // 生成海报
             setTimeout(this.useqrcode, 0);
