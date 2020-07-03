@@ -16,7 +16,7 @@ export default {
         };
     },
     mounted() {
-        // this.useqrcode();
+        this.useqrcode();
         // this.toPost();
     },
     methods: {
@@ -29,7 +29,7 @@ export default {
                 let imgUri = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"); // 获取生成的图片的url
                 //alert("ss")
                 // setTimeout(() => {
-                    
+
                 // }, timeout);
                 self.imgName = self.postData.videoname + '.png';
                 self.imgHref = imgUri;
@@ -97,7 +97,6 @@ export default {
             console.log(this.postData)
             this.shareState = true;
             // 生成海报
-            setTimeout(this.useqrcode, 0);
             setTimeout(this.toPost, 200);
         },
         /* 关闭窗口 */
