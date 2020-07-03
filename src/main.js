@@ -5,7 +5,8 @@ import App from './App'
 import router from './router'
 import VueResource from 'vue-resource';
 import VueLazyload from 'vue-lazyload';
-import QRCode from 'qrcode'
+import QRCode from 'qrcode';
+// import Toast from '@/components/toast/toast.vue'
 
 import com from './assets/js/common' // 全局公共方法
 Vue.prototype.com = com;
@@ -14,6 +15,7 @@ Vue.prototype.com = com;
 Vue.config.productionTip = false
 Vue.use(VueResource)
 Vue.use(QRCode)
+    // Vue.component("Toast", Toast); //全局自定义组件
 
 /* 图片懒加载 */
 Vue.use(VueLazyload, {

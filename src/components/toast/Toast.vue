@@ -1,23 +1,39 @@
 <template>
-    <div class="toast">
+    <div class="toast" v-if="showMsg">
         {{message}}
     </div>
 </template>
 
 <script>
+import Toast from '@/assets/js/toast.js';
+
 export default {
     name: "Toast",
     data() {
         return {
-            message: '敬请期待'
+            message: '敬请期待',
+            showMsg: false,
+            timer: null     // 定时器
         };
     },
     mounted() {
-
+        let self = this;
+        Toast.$on("toastMsg", (msg) => {
+            if(self.timer){
+                clearTimeout(self.timer);
+                self.timer = null;
+                self.showMsg = false;
+            }
+            self.showMsg = true;
+            self.message = msg;
+            self.timer = setTimeout(()=>{
+                clearTimeout(self.timer);
+                self.timer = null;
+                self.showMsg = false;
+            }, 3000);
+        });
     },
-    methods: {
-
-    }
+    methods: {}
 }
 </script>
 

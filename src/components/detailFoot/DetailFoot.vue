@@ -19,8 +19,7 @@
         <li class="toRecord" @click="toPage('')"></li>
         <li class="toRadio" @click="toPage('')"></li>
       </ul>
-        <toast v-show="isshowToast" ref="toast"></toast>
-    </footer>
+    </footer> 
 </template>
 
 <script>
