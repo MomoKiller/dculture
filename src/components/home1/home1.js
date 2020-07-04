@@ -27,7 +27,7 @@ export default {
             this.runMusic = !this.runMusic;
         },
         toEnter() {
-            this.$router.push({ path: '/bookList' });
+            this.$router.push({ path: '/sort' });
         }
     }
 };

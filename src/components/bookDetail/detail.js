@@ -45,9 +45,9 @@ export default {
         toHomePage() {
             this.$router.push({ path: '/home1' });
         },
-        toList() {
-            // this.$router.push({ path: '/list' });
-            history.go(-1);
+        toList() {;
+            this.$router.push({ path: this.$router.currentRoute.path.replace('Detail', 'List') });
+            // history.go(-1);
         },
         // 点赞
         lickCount(type) {

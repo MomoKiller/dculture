@@ -76,7 +76,7 @@ export default {
         },
         toList() {
             // this.$router.push({ path: '/list' });
-            history.go(-1);
+            this.$router.push({ path: this.$router.currentRoute.path.replace('Detail', 'List') });
         },
         // 点赞
         lickCount(type) {
