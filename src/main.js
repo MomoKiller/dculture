@@ -10,6 +10,9 @@ import QRCode from 'qrcode';
 import com from './assets/js/common' // 全局公共方法
 Vue.prototype.com = com;
 
+import EventUtil from './assets/js/EventUtil'
+Vue.prototype.EventUtil = EventUtil;
+
 
 Vue.config.productionTip = false
 Vue.use(VueResource)

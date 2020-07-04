@@ -1,0 +1,103 @@
+.sort {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.sort a.toHome {
+    width: 9.8rem;
+    height: 2.1rem;
+    background: url(../../assets/img/sort/sort-btn-tohome.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    top: 2.2rem;
+    right: -1.2rem;
+}
+
+
+/* 头部 */
+
+.sort header {
+    width: 100%;
+    height: 17.5rem;
+}
+
+.sort header .bg-bamboo {
+    background: url(../../assets/img/sort/sort-img-bamboo.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 10.1rem;
+    height: 8.25rem;
+}
+
+.sort header .theme {
+    width: 24.3rem;
+    height: 2.2rem;
+    background: url(../../assets/img/sort/sort-bg-theme.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 1.5rem auto 0;
+}
+
+.sort header .title {
+    width: 16.4rem;
+    height: 3.2rem;
+    background: url(../../assets/img/sort/sort-bg-title.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 2rem auto 0;
+}
+
+
+/* 中部 */
+
+.sort .content {}
+
+.sort .content .content-wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sort .content .tips {}
+
+.sort .content .tips a {}
+
+.sort footer {
+    width: 35.7rem;
+    height: 21.35rem;
+    background: url(../../assets/img/sort/sort-bg-footer.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    bottom: -3.2rem;
+}
+
+
+/* 尾部 */
+
+.sort .footer {
+    width: 100%;
+    height: 4rem;
+    position: absolute;
+    bottom: 3rem;
+}
+
+.sort .footer p {
+    width: 100%;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    color: #666666;
+}
+
+.sort .footer p a {
+    width: 100%;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: 'STSong';
+    color: #333333;
+}

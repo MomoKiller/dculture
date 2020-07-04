@@ -13,6 +13,8 @@ import Share from '../components/share/share.vue'
 import test4 from '../components/share/test4.vue'
 import Home1 from '@/components/home1/home1.vue'
 import ShareTip from '@/components/shareTip/ShareTip.vue'
+import Sort from '@/components/sort/Sort.vue'
+import Slider from '@/components/slider/Slider.vue'
 
 Vue.use(Router)
 
@@ -64,10 +66,6 @@ export default new Router({
         name: 'share',
         component: Share
     }, {
-        path: '/test4',
-        name: 'test4',
-        component: test4
-    }, {
         path: '/paintingDetail',
         name: 'paintingDetail',
         component: PaintingDetail
@@ -75,5 +73,17 @@ export default new Router({
         path: '/shareTip',
         name: 'shareTip',
         component: ShareTip
+    }, {
+        path: '/sort',
+        name: '分类',
+        component: Sort
+    }, {
+        path: '/test4',
+        name: 'test4',
+        component: test4
+    }, {
+        path: '/slider',
+        name: 'slider',
+        component: Slider
     }]
 })

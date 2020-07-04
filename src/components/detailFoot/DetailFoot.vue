@@ -12,7 +12,7 @@
         <li class="toDance" @click="toPage('/danceList')"></li>
         <li class="toPainting" @click="toPage('')"></li>
         <li class="toClass">
-          <i @click="toPage('/home1')"></i>
+          <i @click="toPage('/sort')"></i>
         </li>
         <li class="toOpera" @click="toPage('')"></li>
         <li class="toQuyi" @click="toPage('/quyiList')"></li>
