@@ -2,6 +2,8 @@
     height: 100%;
     width: 100%;
     position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .sort a.toHome {
@@ -70,7 +72,11 @@
 
 /* 中部 */
 
-.sort .content {}
+.sort .content {
+    min-height: 35rem;
+    width: 100%;
+    overflow: hidden;
+}
 
 .sort .content .content-wrap {
     width: 100%;
@@ -82,20 +88,39 @@
 .sort .content .tips a {}
 
 .sort footer {
-    width: 35.7rem;
-    height: 21.35rem;
+    /* width: 92%;
+    padding-bottom: 37%;
     background: url(http://www.xinzhimin.xyz/sort-bg-footer.png) no-repeat;
-    background-position: center;
-    background-size: contain;
+    background-position: top center;
+    background-size: 100%;
     position: absolute;
     right: 0;
-    bottom: -3.2rem;
+    bottom: 0; */
+    overflow: hidden;
+    width: 100%;
+    display: block;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.sort footer .footer-wrap {
+    width: 92%;
+    padding-bottom: 37%;
+    background: url(http://www.xinzhimin.xyz/sort-bg-footer.png) no-repeat;
+    background-position: top center;
+    background-size: 100%;
+    float: right;
 }
 
 
 /* 尾部 */
 
 .sort .footer {
+    /* width: 100%;
+    height: 4rem;
+    position: absolute;
+    bottom: 3rem; */
+    /* l */
     width: 100%;
     height: 4rem;
     position: absolute;
