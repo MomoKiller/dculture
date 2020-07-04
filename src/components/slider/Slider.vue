@@ -51,19 +51,23 @@
         sliders: [
           {
             img: 'http://www.xinzhimin.xyz/sort-class-book.png',
-            page: 'bookList'
+            page: 'bookList',
+            name: '图书'
           },
           {
             img: 'http://www.xinzhimin.xyz/sort-class-quyi.png',
-            page: 'quyiList'
+            page: 'quyiList',
+            name: '曲艺'
           },
           {
             img: 'http://www.xinzhimin.xyz/sort-class-dance.png',
-            page: 'danceList'
+            page: 'danceList',
+            name: '舞蹈'
           },
           // {
           //   img: 'http://www.xinzhimin.xyz/sort-class-painting.png',
-          //   page: 'paintingList'
+          //   page: 'paintingList',
+          //   name: '书画'
           // }
         ],
         imgWidth: 300,
@@ -95,13 +99,16 @@
         }, ()=>{
           // 右滑
           self.move(self.pageW, 1, self.speed);
+          self.$emit('titleName', self.sliders[self.currentIndex-1].name);
         }, ()=>{
           // 下滑
         }, ()=>{
           // 左滑
           self.move(self.pageW, -1, self.speed);
+          self.$emit('titleName', self.sliders[self.currentIndex-1].name);
         });
-      
+
+        self.$emit('titleName', self.sliders[self.currentIndex-1].name);
     },
     methods: {
       goPage(index){

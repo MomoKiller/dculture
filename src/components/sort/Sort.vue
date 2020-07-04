@@ -5,11 +5,11 @@
         <header>
             <div class="bg-bamboo"></div>
             <div class="theme"></div>
-            <div class="title"></div>
+            <div class="title">{{title}}</div>
         </header>
         <div class="content">
             <div class="content-wrap">
-                <slider></slider>
+                <slider @titleName="getTitle"></slider>
             </div>
             <div class="tips">
                 << <a>左右轮播选择板块参观</a>>>

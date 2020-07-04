@@ -5,7 +5,8 @@ export default {
     components: { Slider },
     data() {
         return {
-            finTimer: false
+            finTimer: false,
+            title: '书画'
         }
     },
     mounted() {
@@ -23,6 +24,9 @@ export default {
         toHomePage() {
             this.$router.push({ path: '/' });
             // this.$router.push({ path: 'bookDetail', query: { pdfid: item.pdfid } });
+        },
+        getTitle(name) {
+            this.title = name;
         }
     }
 }
