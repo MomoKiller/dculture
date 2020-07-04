@@ -1,6 +1,7 @@
 <template>
     <div class="sort">
         <a class="toHome" @click="toHomePage()"></a>
+        <a class="finger" v-if="finTimer"></a>
         <header>
             <div class="bg-bamboo"></div>
             <div class="theme"></div>

@@ -5,11 +5,14 @@ export default {
     components: { Slider },
     data() {
         return {
-
+            finTimer: true
         }
     },
     mounted() {
         document.title = this.$router.currentRoute.name;
+        setTimeout(() => {
+            this.finTimer = false;
+        }, 3000);
     },
     methods: {
         toHomePage() {

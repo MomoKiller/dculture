@@ -60,7 +60,11 @@
           {
             img: 'http://www.xinzhimin.xyz/sort-class-dance.png',
             page: 'danceList'
-          }
+          },
+          // {
+          //   img: 'http://www.xinzhimin.xyz/sort-class-painting.png',
+          //   page: 'paintingList'
+          // }
         ],
         imgWidth: 300,
         currentIndex: 1,
