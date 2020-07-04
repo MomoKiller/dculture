@@ -5,13 +5,18 @@ export default {
     components: { Slider },
     data() {
         return {
-            finTimer: true
+            finTimer: false
         }
     },
     mounted() {
         document.title = this.$router.currentRoute.name;
+        let isSortPageShowed = JSON.parse(localStorage.getItem('SortPageShowed')) || false;
+        if (!isSortPageShowed) {
+            this.finTimer = true;
+        }
         setTimeout(() => {
             this.finTimer = false;
+            localStorage.setItem('SortPageShowed', true);
         }, 3000);
     },
     methods: {
