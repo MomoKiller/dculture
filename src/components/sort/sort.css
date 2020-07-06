@@ -19,7 +19,8 @@
     background: url(http://www.xinzhimin.xyz/sort-btn-tohome.png) no-repeat;
     background-position: center;
     background-size: contain;
-    position: absolute;
+    /* position: absolute; */
+    position: fixed;
     top: 2.2rem;
     right: -1.2rem;
 }
