@@ -26,10 +26,12 @@
         </svg>
       </li>
     </ul> -->
-      <!-- <ul class="dots">
-        <li v-for="(dot, i) in sliders" :key="i" :class="{dotted: i === (currentIndex-1)}" @click = jump(i+1)>
-        </li>
-      </ul> -->
+    <!-- <ul class="dots">
+      <li v-for="(dot, i) in sliders" :key="i" :class="{dotted: i === (currentIndex-1)}" @click = jump(i+1)>
+      </li>
+    </ul> -->
+
+    <a class="finger" v-if="finTimer"></a>
   </div>
 </template>
 
@@ -75,7 +77,8 @@
         distance: -300,
         transitionEnd: true,
         speed: this.initialSpeed,
-        pageW: 300 
+        pageW: 300,
+        finTimer: false
       }
     },
     computed: {
@@ -109,6 +112,16 @@
         });
 
         self.$emit('titleName', self.sliders[self.currentIndex-1].name);
+
+        /* 出现过一次就不再展示 */
+        let isSortPageShowed = JSON.parse(localStorage.getItem('SortPageShowed')) || false;
+        if (!isSortPageShowed) {
+            this.finTimer = true;
+        }
+        setTimeout(() => {
+            this.finTimer = false;
+            localStorage.setItem('SortPageShowed', true);
+        }, 3000);
     },
     methods: {
       goPage(index){
@@ -196,7 +209,7 @@
     /* height:300px; */
     margin:0 auto;
     /* overflow:hidden; */
-    padding-bottom: 80%;
+    padding-bottom: 82%;
   }
  
  
@@ -278,5 +291,44 @@
   li.active img{ 
     margin: 0;
   }
+
+  .slider a.finger {
+    width: 5.75rem;
+    height: 7.55rem;
+    background: url(http://www.xinzhimin.xyz/sort-btn-click.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: showFinger 3s ease-out;
+    -webkit-animation: showFinger 3s ease-out;
+}
+
  
+ @keyframes showFinger {
+    0% {
+        display: block;
+        width: 5.75rem;
+        height: 7.55rem;
+    }
+    25% {
+        width: 2.9rem;
+        height: 3.8rem;
+    }
+    50% {
+        width: 5.75rem;
+        height: 7.55rem;
+    }
+    75% {
+        width: 2.9rem;
+        height: 3.8rem;
+    }
+    100% {
+        width: 5.75rem;
+        height: 7.55rem;
+    }
+}
 </style>

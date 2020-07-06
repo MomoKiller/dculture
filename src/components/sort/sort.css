@@ -1,9 +1,16 @@
 .sort {
     height: 100%;
     width: 100%;
-    position: relative;
     overflow-x: hidden;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    /* position: relative; */
+}
+
+.sort .sort-wrap {
+    position: relative;
+    min-height: 73.6rem;
+    height: 100%;
 }
 
 .sort a.toHome {
@@ -15,21 +22,6 @@
     position: absolute;
     top: 2.2rem;
     right: -1.2rem;
-}
-
-.sort a.finger {
-    width: 5.75rem;
-    height: 7.55rem;
-    background: url(http://www.xinzhimin.xyz/sort-btn-click.png) no-repeat;
-    background-position: center;
-    background-size: contain;
-    position: absolute;
-    z-index: 3;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    animation: showFinger 3s ease-out;
-    -webkit-animation: showFinger 3s ease-out;
 }
 
 
@@ -87,40 +79,31 @@
 
 .sort .content .tips a {}
 
-.sort footer {
-    /* width: 92%;
-    padding-bottom: 37%;
-    background: url(http://www.xinzhimin.xyz/sort-bg-footer.png) no-repeat;
-    background-position: top center;
-    background-size: 100%;
-    position: absolute;
-    right: 0;
-    bottom: 0; */
+
+/* .sort footer {
     overflow: hidden;
     width: 100%;
     display: block;
     position: relative;
     margin-top: 2rem;
-}
+} */
 
-.sort footer .footer-wrap {
+.sort .footer-wrap {
     width: 92%;
     padding-bottom: 37%;
     background: url(http://www.xinzhimin.xyz/sort-bg-footer.png) no-repeat;
     background-position: top center;
     background-size: 100%;
-    float: right;
+    /* float: right; */
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 
 /* 尾部 */
 
 .sort .footer {
-    /* width: 100%;
-    height: 4rem;
-    position: absolute;
-    bottom: 3rem; */
-    /* l */
     width: 100%;
     height: 4rem;
     position: absolute;
@@ -143,28 +126,4 @@
     font-weight: bold;
     font-family: 'STSong';
     color: #333333;
-}
-
-@keyframes showFinger {
-    0% {
-        display: block;
-        width: 5.75rem;
-        height: 7.55rem;
-    }
-    25% {
-        width: 2.9rem;
-        height: 3.8rem;
-    }
-    50% {
-        width: 5.75rem;
-        height: 7.55rem;
-    }
-    75% {
-        width: 2.9rem;
-        height: 3.8rem;
-    }
-    100% {
-        width: 5.75rem;
-        height: 7.55rem;
-    }
 }
