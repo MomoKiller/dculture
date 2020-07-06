@@ -5,20 +5,11 @@ export default {
     components: { Slider },
     data() {
         return {
-            finTimer: false,
             title: '书画'
         }
     },
     mounted() {
         document.title = this.$router.currentRoute.name;
-        let isSortPageShowed = JSON.parse(localStorage.getItem('SortPageShowed')) || false;
-        if (!isSortPageShowed) {
-            this.finTimer = true;
-        }
-        setTimeout(() => {
-            this.finTimer = false;
-            localStorage.setItem('SortPageShowed', true);
-        }, 3000);
     },
     methods: {
         toHomePage() {
