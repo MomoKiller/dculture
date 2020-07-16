@@ -70,7 +70,7 @@ export default {
         // 点击搜索按钮
         searchList() {
             // 重置条件
-            this.seachParams.videotype = 0;
+            this.seachParams.videotype = 2;
             this.seachParams.currentPage = 1;
             this.seachParams.pageSize = 5;
             this.listObj = [];
