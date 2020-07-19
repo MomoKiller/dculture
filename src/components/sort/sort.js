@@ -9,6 +9,7 @@ export default {
         }
     },
     mounted() {
+        this.com.share(this, location.href);
         document.title = this.$router.currentRoute.name;
     },
     methods: {

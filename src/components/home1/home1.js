@@ -12,10 +12,12 @@ export default {
     },
     mounted() {
         document.title = this.$router.currentRoute.name;
+        this.com.share(this, location.href);
         this.initBoat();
-        audio.loop = true;
-        audio.src = this.backsound;
-        audio.play()//播放状态
+        this.toMusic()
+        // audio.loop = true;
+        // audio.src = this.backsound;
+        // audio.play()//播放状态
        // this.toMusic()   
         // setTimeout(() => {
         // }, 200);
@@ -44,6 +46,7 @@ export default {
             }
         },
         toEnter() {
+            audio.pause();
             this.$router.push({ path: '/sort' });
         }
     }

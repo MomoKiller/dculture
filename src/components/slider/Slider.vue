@@ -54,17 +54,17 @@
           {
             img: 'http://www.xinzhimin.xyz/sort-class-book.png',
             page: 'bookList',
-            name: '图书'
+            name: '图  书'
           },
           {
             img: 'http://www.xinzhimin.xyz/sort-class-quyi.png',
             page: 'quyiList',
-            name: '曲艺'
+            name: '曲  艺'
           },
           {
             img: 'http://www.xinzhimin.xyz/sort-class-dance.png',
             page: 'danceList',
-            name: '舞蹈'
+            name: '舞  蹈'
           },
           // {
           //   img: 'http://www.xinzhimin.xyz/sort-class-painting.png',
