@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    <audio style="display:none" id="musicBox" preload="metadata" controls autoplay='false'></audio>
     <a class="music" @click="toMusic()" :class="{'runMusic': runMusic}"></a>
     <!-- 头部 -->
     <header></header>

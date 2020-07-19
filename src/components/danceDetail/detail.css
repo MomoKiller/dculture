@@ -33,12 +33,13 @@
 }
 
 .detail header .bg-over {
-    width: 100%;
+    width: 40%;
     height: 0;
-    padding-bottom: 16.5%;
+    padding-bottom: 10.5%;
     background: url(http://www.xinzhimin.xyz/detail-bg-over.png) no-repeat;
     background-position: center top;
     background-size: 100%;
+    margin: auto;
 }
 
 
@@ -78,8 +79,8 @@
 
 .detail .content-wrap ul li p.info {
     /* height: 2rem; */
-    line-height: 2rem;
-    font-size: 1rem;
+    line-height: 2.5rem;
+    font-size: 1.5rem;
     text-align: left;
     color: #999999;
     padding-bottom: 1rem;

@@ -98,14 +98,14 @@
 }
 
 .home .theme {
-    width: 3.2rem;
-    height: 36.75rem;
+    width: 2.2rem;
+    height: 25.26rem;
     background: url(http://www.xinzhimin.xyz/home1-label-title.png2.png) no-repeat; 
     background-position: center center;
     background-size: 100% 100%;
     position: absolute;
     right: 5.5rem;
-    top: 50%;
+    top: 53%;
     transform: translateY(-50%);
     /*c3*/
     animation: showTheme 3s ease-out;

@@ -43,7 +43,7 @@ export default {
             this.$refs.tip.openTip();
         },
         toHomePage() {
-            this.$router.push({ path: '/home1' });
+            this.$router.push({ path: '/sort' });
         },
         toList() {;
             this.$router.push({ path: this.$router.currentRoute.path.replace('Detail', 'List') });
