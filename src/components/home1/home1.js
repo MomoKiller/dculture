@@ -15,13 +15,7 @@ export default {
         this.initBoat();
         audio.loop = true;
         audio.src = this.backsound;
-        console.log("ss222s")
-        audio.addEventListener("playing", function(){		//播放状态
-            audio.play()//播放状态
-        });
-        audio.addEventListener("pause", function(){
-            audio.pause();
-        });
+        audio.play()//播放状态
        // this.toMusic()   
         // setTimeout(() => {
         // }, 200);
@@ -43,15 +37,11 @@ export default {
             this.runMusic = !this.runMusic;
             audio.loop = true;
             audio.src = this.backsound;
-            if (audio.paused) { //判读是否播放
-                audio.play(); //没有就播放
+            if(!this.runMusic){
+                audio.pause();
+            }else{
+                audio.play();
             }
-           
-            // if(!this.runMusic){
-            //     audio.pause();
-            // }else{
-            //     audio.play();
-            // }
         },
         toEnter() {
             this.$router.push({ path: '/sort' });
