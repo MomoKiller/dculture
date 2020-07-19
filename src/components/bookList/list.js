@@ -93,9 +93,9 @@ export default {
             // 是否出现返回顶部按钮
             if ((pageH + osTop) >= (scrollH - 70) && scrollH >= (pageH + 70)) {
                 // alert((pageH + osTop) + '++' + scrollH)
-                //this.showBtnTop = true
+                this.showBtnTop = true
             } else {
-                //this.showBtnTop = false;
+                this.showBtnTop = true;
             }
             // 是否加载下一页
             // if ((pageH + osTop) >= (scrollH - 1)) {

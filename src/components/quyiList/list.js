@@ -7,7 +7,7 @@ export default {
     data() {
         return {
             listObj: [],
-            showBtnTop: false,
+            showBtnTop: true,
             seachParams: {
                 videotype: 2,
                 currentPage: 1,
@@ -91,7 +91,7 @@ export default {
             if ((pageH + osTop) >= (scrollH - 70) && scrollH >= (pageH + 70)) {
                 this.showBtnTop = true
             } else {
-                this.showBtnTop = false;
+                this.showBtnTop = true;
             }
             // 是否加载下一页
             // if ((pageH + osTop) >= (scrollH - 1)) {

@@ -7,7 +7,7 @@ export default {
     data() {
         return {
             listObj: [],
-            showBtnTop: false,
+            showBtnTop: true,
             seachParams: {
                 videotype: 0,
                 currentPage: 1,
@@ -92,7 +92,7 @@ export default {
                 // alert((pageH + osTop) + '++' + scrollH)
                 this.showBtnTop = true
             } else {
-                this.showBtnTop = false;
+                this.showBtnTop = true;
             }
             // 是否加载下一页
             // if ((pageH + osTop) >= (scrollH - 1)) {

@@ -15,7 +15,8 @@
     background-size: 100%;
     position: fixed;
     right: 0.5rem;
-    bottom: 10rem;
+    /* bottom: 10rem; */
+    top: 60%;
 }
 
 
