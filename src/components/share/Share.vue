@@ -17,7 +17,8 @@
           <div class="ercode">
             <canvas ref="ercode"></canvas>
           </div>
-          <div class="tip"></div>
+          <!-- <div class="tip"></div> -->
+          <img class="tipimg" v-lazy="tipimg" alt="..." />
         </div>
           <img :src="imgHref" class="content-img" ref="contentImg">
         <!-- <a class="down" :href="imgHref" :download="imgName">

@@ -12,7 +12,8 @@ export default {
             imgfordown: "",
             showdiv: false,
             imgHref: '',
-            imgName: ''
+            imgName: '',
+            tipimg:"http://www.xinzhimin.xyz/share-bg-foot2.png"
         };
     },
     mounted() {
