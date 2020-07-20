@@ -208,7 +208,7 @@ export default {
                 /* 聊天 */
             wx.updateAppMessageShareData({
                 title: '常熟市精品文化数字展厅', // 分享标题
-                desc: '我在常熟市精品文化数字展厅参观作品，大家快和我一起来参观吧！', // 分享描述
+                desc: '常熟市精品文化数字展厅邀请您云参观作品', // 分享描述
                 link: nowlocation, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致 
                 imgUrl: url + '/logo.png', // 分享图标
                 success: function() {
@@ -217,7 +217,7 @@ export default {
             });
             /* 朋友圈 */
             wx.updateTimelineShareData({
-                title: '我在常熟市精品文化数字展厅参观作品，大家快和我一起来参观吧！', // 分享标题
+                title: '常熟市精品文化数字展厅邀请您云参观作品', // 分享标题
                 link: nowlocation, // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
                 imgUrl: url + '/logo.png', // 分享图标
                 success: function() {

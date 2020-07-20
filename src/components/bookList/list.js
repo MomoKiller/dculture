@@ -86,11 +86,13 @@ export default {
         },
         // 滚动
         getScrollPosition() {
+            console.log(">>>>>>>>>>>>>")
             let self = this;
             let scrollH = document.querySelector('.list').scrollHeight;
             let osTop = document.querySelector('.list').scrollTop;
             let pageH = document.querySelector('.list').offsetHeight || document.querySelector('.list').clientHeight;
             // 是否出现返回顶部按钮
+            console.log("scrollH:"+scrollH)
             if ((pageH + osTop) >= (scrollH - 70) && scrollH >= (pageH + 70)) {
                 // alert((pageH + osTop) + '++' + scrollH)
                 this.showBtnTop = true
