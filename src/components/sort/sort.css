@@ -24,6 +24,7 @@
     position: fixed;
     top: 2.2rem;
     right: -1.2rem;
+    z-index: 99999;
 }
 
 
