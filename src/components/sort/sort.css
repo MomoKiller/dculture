@@ -1,10 +1,11 @@
 .sort {
     height: 100%;
     width: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden;
     overflow-y: auto;
-    -webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch; */
     /* position: relative; */
+    overflow: hidden;
 }
 
 .sort .sort-wrap {
@@ -31,6 +32,8 @@
 .sort header {
     width: 100%;
     height: 17.5rem;
+    position: absolute;
+    top: -3rem;
 }
 
 .sort header .bg-bamboo {
@@ -69,11 +72,14 @@
     min-height: 35rem;
     width: 100%;
     overflow: hidden;
+    position: absolute;
+    top: 18rem;
 }
 
 .sort .content .content-wrap {
     width: 100%;
     overflow: hidden;
+    
 }
 
 .sort .content .tips {}
@@ -91,14 +97,17 @@
 
 .sort .footer-wrap {
     width: 92%;
-    padding-bottom: 37%;
+    height: 20vh;
+    background-color: red;
+    /* padding-bottom: 37%; */
+    top: 79vh;
     background: url(http://www.xinzhimin.xyz/sort-bg-footer.png) no-repeat;
     background-position: top center;
     background-size: 100%;
     /* float: right; */
     position: absolute;
     right: 0;
-    bottom: 0;
+    /* bottom: 117px; */
 }
 
 
@@ -108,7 +117,8 @@
     width: 100%;
     height: 4rem;
     position: absolute;
-    bottom: 3rem;
+    /* bottom: 4rem; */
+    top: 89vh;
 }
 
 .sort .footer p {
